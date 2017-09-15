@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_register_bg">
+    <!--back-->
+    <ImageView
+        style="@style/title_back"/>
+
+    <ImageView
+        android:id="@+id/trans_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/mine_login"/>
+
+    <LinearLayout
+        android:id="@+id/register_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trans_pic"
+        android:layout_marginLeft="@dimen/border_space_thr_max"
+        android:layout_marginRight="@dimen/border_space_thr"
+        android:layout_marginTop="@dimen/border_space_max_max"
+        android:background="@drawable/login_shape_bg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/user_account"
+            style="@style/login_edit_style"
+            android:drawableLeft="@drawable/login_phone"
+            android:drawablePadding="@dimen/border_space_sec"
+            android:hint="@string/str_register_account"/>
+
+        <View style="@style/login_register_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/auth_code_register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/border_space_thr"
+                android:layout_weight="2"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/str_enter_auth_code"
+                android:padding="@dimen/border_space_sec_max"
+                android:paddingLeft="@dimen/border_space"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_white"
+                android:textSize="@dimen/text_size_ms"/>
+
+            <TextView
+                android:id="@+id/register_authcode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/border_space_sec"
+                android:layout_weight="1"
+                android:background="@drawable/auth_code_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/border_space_normal"
+                android:paddingLeft="@dimen/border_space_half"
+                android:paddingRight="@dimen/border_space_half"
+                android:paddingTop="@dimen/border_space_normal"
+                android:text="@string/str_regsiter_sendauthcode"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_ms"/>
+        </LinearLayout>
+
+
+        <View style="@style/login_register_line"/>
+
+        <!--<EditText-->
+        <!--android:id="@+id/user_name"-->
+        <!--style="@style/login_edit_style"-->
+        <!--android:drawableLeft="@drawable/login_head"-->
+        <!--android:drawablePadding="@dimen/border_space_sec"-->
+        <!--android:hint="@string/str_enter_username"/>-->
+
+
+        <!--<View-->
+        <!--style="@style/login_register_line"/>-->
+
+        <EditText
+            android:id="@+id/user_psw"
+            style="@style/login_edit_style"
+            android:drawableLeft="@drawable/login_pw"
+            android:drawablePadding="@dimen/border_space_sec"
+            android:hint="@string/str_login_pw_hint"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_protocol_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_container"
+        android:layout_marginTop="@dimen/border_space_sec">
+
+        <CheckBox
+            android:id="@+id/user_protocol_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/border_space_thr_max"
+            android:gravity="center"
+            android:text="@string/str_user_protocol_check_box"
+            android:textColor="@color/color_white"/>
+
+        <TextView
+            android:id="@+id/user_protocol_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_protocol_check_box"
+            android:text="@string/str_user_protocol"
+            android:textColor="@color/color_orange"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        style="@style/btn_login_style"
+        android:layout_below="@id/user_protocol_container"
+        android:layout_marginTop="@dimen/border_space_sec"
+        android:text="@string/str_immde_register"/>
+
+    <TextView
+        android:id="@+id/register_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_btn"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/border_space_sec_max"
+        android:text="@string/str_has_account"
+        android:textColor="@color/color_white"/>
+
+</RelativeLayout>

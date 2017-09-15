@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/border_space_max_max"
+        android:layout_marginTop="@dimen/border_space_thr_max"
+        android:background="@drawable/base_dialog_bg_shape">
+
+        <ImageView
+            android:id="@+id/update_tip_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_close_update_pic"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/dialog_new_tip_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/update_tip_place"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-20dp"
+            android:text="@string/str_update_new_tip_content"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <TextView
+            android:id="@+id/imme_update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_new_tip_content_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/border_space_sec_max"
+            android:layout_marginTop="@dimen/border_space_thr"
+            android:background="@drawable/new_update_tip_btn"
+            android:paddingBottom="@dimen/border_space_normal"
+            android:paddingLeft="@dimen/border_space_sec_max_m"
+            android:paddingRight="@dimen/border_space_sec_max_m"
+            android:paddingTop="@dimen/border_space_normal"
+            android:text="@string/str_update_apk_imme"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_medium"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_close_update_pic"/>
+
+    <ImageView
+        android:id="@+id/close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:padding="@dimen/border_space_sec_m"
+        android:src="@drawable/icon_close_update_tip"/>
+
+</FrameLayout>

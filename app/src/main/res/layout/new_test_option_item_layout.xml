@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/wrapHeight"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingBottom="@dimen/border_space">
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.font.ControlTextView
+        android:id="@+id/new_option_sele_tv"
+        style="@style/test_option_sele_tv_style"/>
+
+    <LinearLayout
+        android:id="@+id/new_option_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/new_option_sele_tv"
+        android:background="@drawable/option_sele_bg_selector"
+        android:orientation="vertical">
+
+        <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.NoFoucsTextView
+            android:id="@+id/option_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_ml"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

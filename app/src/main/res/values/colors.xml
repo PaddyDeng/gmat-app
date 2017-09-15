@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#000000</color>
+
+    <color name="im_font_color_text_hint">#abb1b6</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <color name="default_clickable_color">#cccccc</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_make_test">#97000000</color>
+    <color name="color_hint">#c8c8c8</color>
+    
+    <color name="color_test_blurry">#69000000</color>
+
+    <color name="color_translucence">#B2000000</color>
+    <color name="color_community_tab_bg">#FFF6E1</color>
+
+    <color name="color_bg_gray">#E8E8E8</color>
+    <color name="color_dot">#D2D2D2</color>
+
+    <color name="color_black">#ff000000</color>
+    <color name="color_darkness">#333436</color>
+    <color name="color_white">#ffffffff</color>
+    <color name="color_gray">#99ffffff</color>
+    <color name="color_sec_gray">#F2F2F2</color>
+    <color name="color_sec_next_gray">#33cac6c6</color>
+    <color name="color_option_gray">#99999a</color>
+    <color name="color_thr_gray">#939393</color>
+    <color name="color_sky_blue">#993c6195</color>
+    <color name="color_auth_code">#991e2e48</color>
+    <color name="color_green">#019934</color>
+    <color name="color_sec_white">#EFEFF4</color>
+    <color name="color_blue">#197fed</color>
+    <color name="color_ask_blue">#00a0e9</color>
+    <color name="color_set_btn">#478fdf</color>
+    <color name="color_orange">#eb9515</color>
+
+    <!--做题或详情页面的背景色-->
+    <color name="color_test_border">#33cac6c6</color>
+
+    <color name="color_red">#ff0000</color>
+    <color name="color_new_update_tip">#00c6ab</color>
+
+    <color name="color_know_one_o">#ff2a5b91</color>
+    <color name="color_know_one_to">#cc2a5b91</color>
+    <color name="color_know_one_tr">#a42a5b91</color>
+    <color name="color_know_one_f">#832a5b91</color>
+
+    <color name="color_know_two_o">#fffd8330</color>
+    <color name="color_know_two_to">#ccfd8330</color>
+    <color name="color_know_two_tr">#a4fd8330</color>
+    <color name="color_know_two_f">#83fd8330</color>
+
+    <color name="color_know_thr_o">#ff8487be</color>
+    <color name="color_know_thr_to">#cc8487be</color>
+    <color name="color_know_thr_tr">#a48487be</color>
+    <color name="color_know_thr_f">#838487be</color>
+
+    <color name="color_know_four_o">#ff599f8c</color>
+    <color name="color_know_four_to">#cc599f8c</color>
+    <color name="color_know_four_tr">#a4599f8c</color>
+    <color name="color_know_four_f">#83599f8c</color>
+
+    <color name="color_high_info_bg">#548FC1</color>
+
+</resources>

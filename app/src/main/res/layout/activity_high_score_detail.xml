@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/custome_title_bar_style">
+
+        <ImageView style="@style/black_bg_title_back"/>
+
+        <TextView
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"
+            android:text="@string/str_high_score_story"/>
+    </RelativeLayout>
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/high_score_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/border_space_sec_max"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_bl"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/border_space_sec_max"
+                android:layout_marginLeft="@dimen/border_space"
+                android:layout_marginRight="@dimen/border_space"
+                android:background="@color/color_high_info_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/high_detail_item_container_style">
+
+                    <TextView
+                        android:id="@+id/high_score_user_name_tv"
+                        style="@style/high_detail_left_tv_style"/>
+
+                    <TextView
+                        android:id="@+id/high_score_base_tv"
+                        style="@style/high_detail_right_tv_style"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/high_detail_item_container_style">
+
+                    <TextView
+                        android:id="@+id/high_score_out_time_tv"
+                        style="@style/high_detail_left_tv_style"/>
+
+                    <TextView
+                        android:id="@+id/high_score_class_type_tv"
+                        style="@style/high_detail_right_tv_style"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/high_detail_item_container_style"
+                    android:paddingBottom="@dimen/border_space">
+
+                    <TextView
+                        android:id="@+id/test_times_tv"
+                        style="@style/high_detail_left_tv_style"/>
+
+                    <TextView
+                        android:id="@+id/test_score_tv"
+                        style="@style/high_detail_right_tv_style"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.GeneralView
+                android:id="@+id/high_score_detail_general_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView>
+</LinearLayout>

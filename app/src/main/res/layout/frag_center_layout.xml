@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/custome_title_bar_style"
+                android:background="@color/color_blue">
+
+                <ImageView
+                    android:id="@+id/center_title_menu"
+                    style="@style/main_nav_title_menu"/>
+
+                <ImageView
+                    android:id="@+id/center_title_bar_setting"
+                    style="@style/main_nav_title_set"
+                    android:src="@drawable/main_icon_setting"/>
+
+                <TextView
+                    android:id="@+id/async_commit_local_tv"
+                    android:layout_marginRight="@dimen/border_space_sec_max"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/center_title_bar_setting"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="同步"
+                    android:textColor="@color/color_white"/>
+
+                <ImageView
+                    android:layout_toLeftOf="@id/async_commit_local_tv"
+                    android:id="@+id/async_commit_local_db"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/border_space_half"
+                    android:src="@drawable/incon_refresh_db"/>
+
+                <!--
+                                <RelativeLayout
+                                    android:id="@+id/center_hint_async_make_data"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="@dimen/border_space_normal"
+                                    android:layout_toLeftOf="@id/async_commit_local_db"
+                                    android:background="@drawable/icon_asyn_db_hint"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/async_make_data_db_hint"
+                                        android:textColor="@color/color_white"
+                                        android:textSize="@dimen/text_size_micro"/>
+                                </RelativeLayout>
+                                -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_blue"
+                android:paddingBottom="@dimen/border_space_sec_max_m">
+
+                <LinearLayout
+                    android:id="@+id/center_user_info_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout style="@style/main_center_user">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/center_make_num"
+                                style="@style/main_center_make_info"
+                                android:text="@string/str_main_center_make_num"/>
+
+                            <TextView
+                                style="@style/main_center_make_info"
+                                android:text="@string/str_main_center_make_des"
+                                android:textSize="@dimen/text_size_small"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.CircleImageView
+                        android:id="@+id/center_user_img"
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/place_img"
+                        app:border_color="@color/color_white"
+                        app:border_width="2dip"/>
+
+                    <RelativeLayout style="@style/main_center_user">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/center_avg_per"
+                                style="@style/main_center_make_info"
+                                android:text="@string/str_main_center_make_avg_num"/>
+
+                            <TextView
+                                style="@style/main_center_make_info"
+                                android:text="@string/str_main_center_make_avg"
+                                android:textSize="@dimen/text_size_small"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/center_user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/center_user_info_container"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/border_space"
+                    android:text="@string/str_tourist"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_ml"/>
+
+                <TextView
+                    android:id="@+id/center_user_make_info_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/center_user_name_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/border_space"
+                    android:text="@string/str_test"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/center_login_or_continue_make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/center_user_make_info_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/border_space_sec_max"
+                    android:background="@color/color_set_btn"
+                    android:paddingBottom="@dimen/base_padding"
+                    android:paddingLeft="@dimen/border_space_normal"
+                    android:paddingRight="@dimen/border_space_normal"
+                    android:paddingTop="@dimen/base_padding"
+                    android:text="@string/str_login"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_small"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:background="@color/color_white">
+
+                    <View
+                        android:id="@+id/center_one_item_line"
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@color/color_sec_gray"/>
+
+                    <RelativeLayout
+                        android:id="@+id/wrong_record_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/center_one_item_line">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/worng_question"/>
+
+                            <TextView
+                                style="@style/main_center_item_tv_style"
+                                android:text="@string/str_main_center_wrong_recording"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/center_make_record_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/center_one_item_line">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/make_recording"/>
+
+                            <TextView
+                                style="@style/main_center_item_tv_style"
+                                android:text="@string/str_main_center_make_recording"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/line"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_sec_gray"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:background="@color/color_white">
+
+                    <View
+                        android:id="@+id/center_two_item_line"
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@color/color_sec_gray"/>
+
+                    <RelativeLayout
+                        android:id="@+id/simulation_record_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/center_two_item_line">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/test_record"/>
+
+                            <TextView
+                                style="@style/main_center_item_tv_style"
+                                android:text="@string/str_main_center_test_recording"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/center_buy_record_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/center_two_item_line">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/pay_test_record"/>
+
+                            <TextView
+                                style="@style/main_center_item_tv_style"
+                                android:text="@string/str_main_center_pay_test_recording"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/line"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_sec_gray"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:background="@color/color_white">
+
+                    <View
+                        android:id="@+id/center_thr_item_line"
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@color/color_sec_gray"/>
+
+                    <RelativeLayout
+                        android:id="@+id/set_collection_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/center_thr_item_line">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/my_keep"/>
+
+                            <TextView
+                                style="@style/main_center_item_tv_style"
+                                android:text="@string/str_main_center_my_keep"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/center_msg_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/center_thr_item_line">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/msg_center"/>
+
+                            <TextView
+                                style="@style/main_center_item_tv_style"
+                                android:text="@string/str_main_center_my_file"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView>
+
+</LinearLayout>

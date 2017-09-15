@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/border_space_sec_max"
+    android:layout_marginRight="@dimen/border_space_sec_max"
+    android:layout_marginTop="@dimen/border_space_sec_m"
+    android:layout_marginBottom="@dimen/border_space_half"
+    app:cardCornerRadius="@dimen/border_space">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/border_space_half"
+        android:orientation="vertical"
+        android:padding="@dimen/border_space">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border_space"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/record_topic_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_blue"/>
+
+            <TextView
+                android:id="@+id/record_topic_you_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/border_space"
+                android:textColor="@color/color_black"/>
+
+            <TextView
+                android:id="@+id/record_topic_correct_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/border_space"
+                android:textColor="@color/color_green"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/record_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/border_space"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/record_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/border_space"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,499 @@
+<resources>
+    <string name="app_name">雷哥GMAT</string>
+    <string name="str_test">-.-</string>
+
+
+    <string name="str_dialog_apk_downloding_msg">正在下载客户端(%1$d %2$s)</string>
+    <string name="str_update_apk_title">发现新版本</string>
+    <string name="str_update_new_tip_content">每一次都带给你实质性的体验升级</string>
+    <string name="str_update_apk_fail">下载失败</string>
+    <string name="str_is_new_apk">已经是最新版本了!</string>
+    <string name="str_update_apk_imme">立即更新</string>
+    <string name="str_update_apk_wait">稍后更新</string>
+    <string name="str_need_sdcard_permission">本功能需要读写SDCARD权限</string>
+
+    <string name="camera_permission_required">本功能需要相机权限！</string>
+    <string name="tip_title">请拖动裁剪框四角选择一行题目</string>
+    <string name="no_tip">不在提示</string>
+    <string name="go_on">继续</string>
+
+    <!-- 请替换成在语音云官网申请的appid -->
+    <string name="app_id">appid=59202bb2</string>
+    <string name="text_begin">请开始说话…</string>
+    <!--登录注册-->
+    <string name="str_login_pw_hint">请输入5～16位密码</string>
+    <string name="str_login_account">请输入手机号/邮箱</string>
+    <string name="str_register_account">请输入手机号/邮箱</string>
+    <string name="str_enter_auth_code">请输入验证码</string>
+    <string name="str_regsiter_sendauthcode">获取验证码</string>
+    <string name="str_enter_username">用户名：数字+字母</string>
+    <string name="str_has_account">已有账号，立即登录</string>
+    <string name="str_login">登录</string>
+    <string name="str_login_onfail">登录失败</string>
+    <string name="str_login_loading">登录中...</string>
+    <string name="str_forget_ps">忘记密码</string>
+    <string name="str_immde_register">立即注册</string>
+    <string name="str_use_qq_login">使用QQ登录</string>
+    <string name="str_set_new_pwd">设置新密码</string>
+    <string name="str_confirm_pwd">确认新密码</string>
+    <string name="str_confirm">确定</string>
+    <string name="str_confirm_re">确认</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_update">更新</string>
+    <string name="str_please_choose_pic">请选择图片</string>
+    <string name="str_account_error">请输入手机号/邮箱，并获取验证码</string>
+    <string name="str_pwd_not_null">密码不能为空</string>
+    <string name="str_name_not_null">用户名不能为空</string>
+    <string name="str_account_format_error">账号输入不正确</string>
+    <string name="str_pwd_no_com">两次密码不一致</string>
+    <string name="str_no_data_tip">这里什么都没有喔</string>
+    <string name="str_new_set_nick_name_tip">2-8位，不可使用特殊字符，以后可随时更改</string>
+    <string name="str_user_protocol_check_box">已阅读并同意</string>
+    <string name="str_user_protocol">《用户协议》</string>
+    <string name="str_user_protocol_title">用户协议</string>
+
+    <string name="str_loading">正在加载中...</string>
+    <string name="str_retry_load">重新加载</string>
+
+    <string name="str_net_error_noconnection">没有网络连接，请检查网络连接</string>
+    <string name="str_net_error_unknownerror">服务器异常,请稍后再试!</string>
+    <string name="str_net_error_timeout">网络慢</string>
+    <string name="str_loading_wait">请稍候…</string>
+    <string name="str_net_error_404">对不起，系统正在维护中，请稍后访问！</string>
+
+    <string name="str_make_test">做题模考</string>
+    <string name="str_knowledge">小讲堂</string>
+    <string name="str_pro_forma">备考社区</string>
+    <string name="str_gmat">抢先课程</string>
+    <string name="str_user_center">个人中心</string>
+
+    <string name="str_topiclib_has_update">题库有更新咯~</string>
+    <string name="str_update_ing">正在更新</string>
+    <string name="str_update_end">更新完成</string>
+    <string name="str_update_fail">更新失败</string>
+    <string name="str_update_fail_hint">(请稍后重新更新)</string>
+
+    <string name="evaluation_title">喜欢雷哥GMAT的做题模考功能吗？</string>
+    <string name="evaluation_sec_title">去应用商店给个5星好评吧？</string>
+    <string name="evaluation_one_btn_des">喜欢，给五星好评？</string>
+    <string name="evaluation_two_btn_des">我要吐槽</string>
+    <string name="evaluation_thr_btn_des">残忍拒绝</string>
+    <string name="async_make_data_db_hint">点我，同步做题数据到电脑端啦</string>
+
+    <string name="str_search_no_result">没有查找到相关内容</string>
+
+    <string name="str_set_no_see_pwd">*&#160;*&#160;*&#160;*&#160;*&#160;*&#160;*</string>
+    <string name="str_header_camera">拍照</string>
+    <string name="str_header_photo">从相册选择</string>
+    <string name="str_set_title">更多设置</string>
+    <string name="str_user_info">个人信息</string>
+    <string name="str_set_head">头像</string>
+    <string name="str_set_name">用户名</string>
+    <string name="str_set_nick_name">昵称</string>
+    <string name="str_set_phone">电话</string>
+    <string name="str_set_email">邮箱</string>
+    <string name="str_set_pwd">密码</string>
+    <string name="str_set_about_we">关于我们</string>
+    <string name="str_set_gov_net">官方网站</string>
+    <string name="str_contact_us_gov_wx">官方微信</string>
+    <string name="str_contact_us_sina">新浪微博</string>
+    <string name="str_contact_us_service_email">客服邮箱</string>
+    <string name="str_contact_us_service_phone">客服电话</string>
+    <string name="str_contact_us_contact_service">联系客服</string>
+    <string name="str_contact_us_gov_wx_detal">雷哥&#160;GMAT&#160;与商科留学</string>
+    <string name="str_contact_us_online">雷哥&#160;GMAT&#160;在线</string>
+    <string name="str_contact_us_email_detail">service@gmatonline.cn</string>
+    <string name="str_call_phone_no_permisson">拨打电话权限未授予</string>
+    <string name="str_camera_no_permisson">相机权限未授予，去设置中心设置</string>
+    <string name="str_read_external_no_permisson">相册权限未授予，去设置中心设置</string>
+    <string name="str_contact_us_service_phone_num">400&#8211;1816&#8211;180</string>
+    <string name="str_set_gmat_net">www.gmatonline.cn</string>
+    <string name="str_set_wx_num">微信公众号</string>
+    <string name="str_set_wx_num_info">LGclub</string>
+    <string name="str_set_gmat_qq">雷哥GMAT QQ备考群</string>
+    <string name="str_set_gmat_qq_number">439324846</string>
+    <string name="str_set_clear_cache">清楚缓存</string>
+    <string name="str_set_version">版本检测</string>
+    <string name="str_set_font_size">字体大小</string>
+    <string name="str_set_feed_back">意见反馈</string>
+    <string name="str_set_exit">退出当前账户</string>
+    <string name="str_set_modify_nick_name">修改昵称</string>
+    <string name="str_set_nick_name_tip">请填写昵称</string>
+    <string name="str_set_modify_com">与当前昵称一致，无须修改</string>
+    <string name="str_set_modify_user_name_fail_tip">用户名不能修改</string>
+    <string name="str_set_modify_phone_title">修改手机号</string>
+    <string name="str_set_modify_email_title">修改邮箱</string>
+    <string name="str_set_phone_tip">请填写手机号</string>
+    <string name="str_set_email_tip">请填写邮箱</string>
+    <string name="str_set_modify_phone_com">与当前手机号一致，无须修改</string>
+    <string name="str_set_modify_email_com">与当前邮箱一致，无须修改</string>
+    <string name="str_set_modify_phone_format">手机号格式错误</string>
+    <string name="str_set_modify_email_format">邮箱格式错误</string>
+    <string name="str_set_modify_old_pwd">请填写原密码</string>
+    <string name="str_set_modify_new_pwd">请填写新密码</string>
+    <string name="str_set_modify_pwd_title">修改密码</string>
+    <string name="str_set_modify_pwd_judge">新旧密码一致，无须修改</string>
+    <string name="str_set_copy_success">已拷贝至粘贴板</string>
+    <string name="str_font_size_tip_info">拖动下面的滑块，可设置字体大小，设置后\n会改变题目练习、小讲堂的字体大小。\nA simple question</string>
+    <string name="str_set_nick_title">先起一个闪亮亮的昵称吧</string>
+
+    <string name="str_main_center_make_num">0</string>
+    <string name="str_main_center_make_des">做题数量</string>
+    <string name="str_main_center_make_avg_num">0%</string>
+    <string name="str_main_center_make_avg">平均正确率</string>
+    <string name="str_main_center_continue_make">继续做题</string>
+    <string name="str_main_center_wrong_recording">错题记录</string>
+    <string name="str_main_center_make_recording">做题记录</string>
+    <string name="str_main_center_test_recording">模考记录</string>
+    <string name="str_main_center_pay_test_recording">购课记录</string>
+    <string name="str_main_center_my_keep">我的收藏</string>
+    <string name="str_cancel_collection">取消收藏</string>
+    <string name="str_main_center_msg">消息中心</string>
+    <string name="str_main_center_my_file">我的文件</string>
+    <string name="str_tourist">游客</string>
+    <string name="str_no_nick_name">没有设置昵称</string>
+
+    <string name="str_record_title">%1$s-%2$d</string>
+    <string name="str_record_your_answer">你的答案：%1$s</string>
+    <string name="str_record_correct_answer">正确答案：%1$s</string>
+    <string name="str_join_discuss">参与讨论</string>
+    <string name="str_topic_discuss">题目讨论</string>
+    <string name="str_topic_ask_question">提问</string>
+    <string name="str_answer_use_time">用时:%1$s</string>
+    <string name="str_record_use_time">%1$s&#160;用时:%2$s&#160;%3$d人已做</string>
+    <string name="str_topic_floor_hint">%1$d楼</string>
+    <string name="str_topic_error_type">请选择错误类型</string>
+
+    <string name="str_know_logic">逻辑CR</string>
+    <string name="str_know_grammer">语法SC</string>
+    <string name="str_know_read">阅读RC</string>
+    <string name="str_know_math">数学Q</string>
+    <string name="str_know_people_num_des"><![CDATA[共<font color="#eb9515">%1$d</font>知识点，<font color="#eb9515">%2$d</font>人已学习]]></string>
+
+    <string name="str_collection_og">OG</string>
+    <string name="str_collection_prep">PREP</string>
+    <string name="str_collection_lecture">讲义</string>
+    <string name="str_collection_gwd">GWD</string>
+    <string name="str_collection_manhattan">Manhattan</string>
+
+    <string name="str_remark_detail_title">文章详情</string>
+    <string name="str_remark_new_msg_title">新消息</string>
+    <string name="str_remark_detail_et_hint">我也说一句</string>
+    <string name="str_post_remark">发表帖子</string>
+    <string name="str_post_remark_enter_title">请输入标题</string>
+    <string name="str_post_remark_enter_content">请输入内容</string>
+    <string name="str_post">发表</string>
+    <string name="str_no_replay_yourself">不能回复自己</string>
+    <string name="str_reply">回复</string>
+    <string name="str_no_login_tip">你还未登录，请先登录</string>
+    <string name="str_set_account_info">请去个人中心设置邮箱或手机号</string>
+
+    <string name="str_no_login_one">登录</string>
+    <string name="str_no_login_two">登陆</string>
+
+    <string name="str_make_test_title">海量题目、丰富题型</string>
+    <string name="str_make_test_topic_number"><![CDATA[已有Verbal<font color="#eb9515">%1$s</font>题，Quant<font color="#eb9515">%2$s</font>题]]></string>
+    <string name="str_make_test_people_number"><![CDATA[<font color="#eb9515">%1$d</font>人在雷哥网备考]]></string>
+    <string name="str_pic_search">拍照找题</string>
+    <string name="str_language_search">语音找题</string>
+    <string name="str_insp_search">搜索找题</string>
+    <string name="str_intelligent_office">智能练习</string>
+    <string name="str_order_practice">按照书本练习</string>
+    <string name="str_single_contact">单项练习</string>
+    <string name="str_back_to_old_version">回到旧版</string>
+    <string name="str_back_to_new_version">回到新版</string>
+    <string name="str_gmat_report">GMAT报告</string>
+    <string name="str_simulation_test">仿真模考</string>
+    <string name="str_difficulty_make">难度做题</string>
+    <string name="str_know_point_practice">知识点练习</string>
+    <string name="str_single_item_title">%1$s-%2$s：%3$s</string>
+    <string name="str_single_item_title_no_tobj">%1$s：%2$s</string>
+    <string name="str_center_tip">你最近做到了-%1$s：%2$s</string>
+    <string name="str_center_tip_intelligent">你最近在做智能练习</string>
+    <!--<![CDATA[<font color="#000000">txt</font>]]>-->
+    <string name="str_single_item_content">题目总数：%1$d&#160;<![CDATA[<font color="#019934">平均正确率：%2$s</font>]]></string>
+    <string name="str_single_item_des">已做%1$s题&#160;<![CDATA[<font color="#019934">平均正确率：%2$s</font>]]></string>
+    <string name="str_item_des">已做%1$s题</string>
+    <string name="str_simu_item_des">已做%1$s题&#160;<![CDATA[<font color="#019934">平均得分：%2$d</font>]]></string>
+    <string name="str_single_item_new_content">已做：%1$s&#160;<![CDATA[<font color="#019934">平均正确率：%2$s</font>]]></string>
+    <string name="str_know_item_content">题目总数：%1$d&#160;<![CDATA[<font color="#019934">做题人数：%2$d</font>]]></string>
+    <string name="str_simulation_item_content">题目总数：%1$d&#160;<![CDATA[<font color="#019934">平均得分：%2$d</font>]]></string>
+    <string name="str_single_item_btn">开始做题</string>
+    <string name="str_go_on_make">继续做题</string>
+    <string name="str_again_make">重新开始</string>
+    <string name="str_end_make_test">本套题目已完成</string>
+    <string name="str_make_topic_fail">做题失败</string>
+    <string name="str_simulation_item_start_btn">开始模考</string>
+    <string name="str_simulation_item_go_on_btn">继续模考</string>
+    <string name="str_simulation_item_no_end">未完成</string>
+    <string name="str_simulation_item_see_result_btn">查看结果</string>
+    <string name="str_simulation_click_start">点击开始</string>
+    <string name="str_simulation_jump_rest_start">跳过休息时间</string>
+    <string name="str_simulation_start_tip">模考马上将要开始</string>
+    <string name="str_simulation_start_quant_part">Quant部分</string>
+    <string name="str_simulation_start_quant_des">共计37题\n限时75分钟</string>
+    <string name="str_simulation_start_verbal_part">Verbal部分</string>
+    <string name="str_simulation_start_verbal_des">共计41题\n限时75分钟</string>
+    <string name="str_diff_one_item">600以下</string>
+    <string name="str_diff_two_item">600～650</string>
+    <string name="str_diff_thr_item">650～680</string>
+    <string name="str_diff_thr_sec_item">650～700</string>
+    <string name="str_diff_max_item">700以上</string>
+    <string name="str_diff_four_item">680～700</string>
+    <string name="str_diff_five_item">700～730</string>
+    <string name="str_diff_six_item">730以上</string>
+    <string name="str_sim_language_title">语文套题</string>
+    <string name="str_sim_language_des">69套模考全方位满足你的需求</string>
+    <string name="str_sim_math_title">数学套题</string>
+    <string name="str_sim_math_des">59套模考全方位满足你的需求</string>
+    <string name="str_sim_all_title">全套套题</string>
+    <string name="str_sim_all_des">59套模考全方位满足你的需求</string>
+    <string name="str_end_peo_num">完成人数</string>
+    <string name="str_avg_correct">平均正确率</string>
+    <string name="str_avg_use_time">平均耗时</string>
+
+    <string name="str_test_gmat_report">Complete&#160;Report</string>
+    <string name="str_sc_gmat_report">SC&#160;Report</string>
+    <string name="str_rc_gmat_report">RC&#160;Report</string>
+    <string name="str_cr_gmat_report">CR&#160;Report</string>
+    <string name="str_q_gmat_report">Quant&#160;Report</string>
+
+    <string name="str_pop_see_analyze">查看解析</string>
+    <string name="str_pop_big_txt_size">@string/str_set_font_size</string>
+    <string name="str_pop_topic_feed_error">题目纠错</string>
+    <string name="str_answer_error">答案错误</string>
+    <string name="str_format_error">格式有错误</string>
+    <string name="str_topic_content_error">题目内容有错误</string>
+    <string name="str_another_error">其他</string>
+    <string name="str_et_hint_info">请输入题目纠错信息</string>
+
+    <string name="str_report_verbal">Verbal部分</string>
+    <string name="str_report_sc_data">SC备考数据</string>
+    <string name="str_report_rc_data">RC备考数据</string>
+    <string name="str_report_cr_data">CR备考数据</string>
+    <string name="str_report_q_data">Quant备考数据</string>
+    <string name="str_test_point_analysis">考点掌握分析</string>
+    <string name="str_report_diff_level">难度水平</string>
+    <string name="str_report_quant">QUANT部分</string>
+    <string name="str_report_current_status">你目前的难度水平</string>
+    <string name="str_test_point_analysis_des">准确了解各考点掌握情况，针对薄弱项知识点突破</string>
+    <string name="str_report_avg_correct">正确率</string>
+    <string name="str_report_pace">Pace</string>
+    <string name="str_report_mistake_sc">句子改错SC</string>
+    <string name="str_report_all_staus">整体复习状态</string>
+    <string name="str_report_review_gap">复习策略建议</string>
+    <string name="str_correct_avg_des">正确率(%)</string>
+    <string name="str_pace_min_des">Pace(s)</string>
+    <string name="str_correct_place_avg_des">正确率(%1$s)</string>
+    <string name="str_pace_place_min_des">Pace(%1$s)</string>
+
+    <string name="str_test_act_title">%1$d/%2$d</string>
+    <string name="str_test_next_sub">下一题</string>
+    <string name="str_test_corrent_answer">正确答案：%1$s</string>
+    <string name="str_test_user_des">用户<![CDATA[<font color="#197fed">lgw***%1$d</font>]]>于%2$s评论：</string>
+    <string name="str_test_result">答题结果</string>
+    <string name="str_search_result_detail">查看详情</string>
+    <string name="str_again_test">重新做题</string>
+    <string name="str_use_time">耗时</string>
+    <string name="str_correct_avg">正确率</string>
+    <string name="str_lang_result"><![CDATA[语文得分：<font color="#197fed">%1$s</font>（满分：<font color="#197fed">51</font>分）]]></string>
+    <string name="str_math_result"><![CDATA[数学得分：<font color="#197fed">%1$s</font>（满分：<font color="#197fed">51</font>分）]]></string>
+    <string name="str_all_result"><![CDATA[本次总得分：<font color="#197fed">%1$s</font>（满分：<font color="#197fed">800</font>分）]]></string>
+
+    <string name="str_less_tf">&lt;25</string>
+    <string name="str_less_t">&lt;30</string>
+    <string name="str_less_fh">&lt;470</string>
+    <string name="str_reuslt_detail_tip_no">暂无详细信息</string>
+    <string name="str_wave_center_des">%1$s/%2$s</string>
+    <string name="str_kp_des">%1$s：</string>
+    <string name="str_avg_des">正确率：%1$s</string>
+    <string name="str_whole_one_des">%1$s\n难度600以下题目</string>
+    <string name="str_whole_two_des">%1$s\n难度600～650题目</string>
+    <string name="str_whole_thr_des">%1$s\n难度650～700题目</string>
+    <string name="str_whole_four_des">%1$s\n难度700以上题目</string>
+
+    <string name="better">总体掌握不错，继续加油！</string>
+    <string name="more_than">总体掌握一般，还有提升空间！</string>
+    <string name="loss">总体掌握较差，还需继续努力！</string>
+
+    <!--========================SC====================================-->
+    <string name="str_sc_e">SC部分的正确率可以达到80%以上，说明你距离700更近一步了呢。在接下来的日子里，只需要保持常规训练，以10道左右为佳，维持自己现有的题感就可以了。如果还想继续冲刺，则需要多花一点时间在错题分析上面。资料的话：自己的错题库+prep（建议08-12-07）</string>
+    <string name="str_sc_s">65%-80%，SC部分这个正确率有很大可能性是忽略了逻辑语义这个考点，要多去练习一些全句画线或者句式有变化的句子；还有一种可能性是某几个知识点没有掌握清楚。这个建议先去看一下相关知识点讲解，再重新做题。资料的话：自己的错题库+prep（建议08-12-07） 知识点可以配合《曼哈顿语法》或者《白勇语法》以及雷哥知识库（http://www.gmatonline.cn/learn/64.html）</string>
+    <string name="str_sc_f">50%-65%，建议重新过一遍知识点，分析自己做错的题目当中的所有错误选项原因，务必做到搞懂才放过。建议10-20道一组，每天3-5组进行训练。资料的话：自己的错题库+OG+prep（建议08-12-07） 知识点可以配合《曼哈顿语法》或者《白勇语法》以及雷哥知识库（http://www.gmatonline.cn/learn/64.html）</string>
+    <string name="str_sc_l">50%以下，重新学习吧。磨刀不误砍柴工，要把每一个知识点都弄懂哦~熟悉GMAT的九大考点。从粗再细最后形成系统。资料的话，建议先看雷哥知识库（http://www.gmatonline.cn/learn/64.html）或《曼哈顿语法》或者《白勇语法》熟悉基本考点，然后再去OG，等正确率上来后，在做prep（建议08-12-07）。</string>
+
+    <!--========================CR====================================-->
+    <string name="str_cr_s">CR的正确率达到70%以上，如果还想提高，就只有在错题上面多下一点功夫，在分析错题的时候主要以错误选项为主，看能不能从错误选项当中推出相似的思维模式。多总结自己的易错点，从而达到提高的作用。除此之外，每天保证10道新题的练习量就可以了。资料的话：自己的错题库+prep（建议08-12-07）</string>
+    <string name="str_cr_f">50%-70%，对于做错的题目分门别类，从题型入手，逐步突破。一定要搞定错题原因，同时对照自己的错题原因，强化自己的思维习惯，做到同类题不再错。建议每次5-10题一组，每天3-5组进行训练。必要时，需要做长难句概括训练以及词汇积累。这个部分的资料比较少，可以通过看知识点的报告和分数段，从而在雷哥题库上练习。建议做OG+prep（建议08-12-07）。雷哥知识库链接：http://www.gmatonline.cn/learn/63.html</string>
+    <string name="str_cr_l">50%以下，首先判断是不是单词和长难句原因，如果是那么就去练习吧。如果不是，那么就需要看一些逻辑相关的书籍来补充自己的商科思维。判断方法：把题目翻译成中文，如果有很大几率做对，那一般就是单词原因。资料的话，建议先看雷哥知识库（http://www.gmatonline.cn/learn/63.html）或《bible》熟悉基本方法，然后再去OG，等正确率上来后，在做prep（建议08-12-07）。</string>
+
+
+    <!--========================CR====================================-->
+    <string name="str_rc_s">RC的正确率达到60%，并不是说就万事大吉了，一定多去关注自己错题有没有集合在同一篇文章下，对于这种文章，要多注意总结分析结构。一般来说，只要阅读可以保证每篇错不超过一半，就可以保证不掉库。每天的练习量需要以文章类型或者题型为主。如果是文章类型的问题，那么要多注意分析文章结构；如果是题型问题，则需要多总结相关的题型技巧。资料的话：自己的错题库+prep（建议08-12-07）</string>
+    <string name="str_rc_f">40%-60%，分析题型和篇章结构，先分析是什么导致正确率上不去的罪魁祸首。其次，熟悉文章的篇章结构。观察自己的定位是不是每次都可以定准确。每一篇文章可以稍微多花一点时间用来分析。建议一篇一篇去做，同类型的文章放在一起做。资料的话：雷哥知识库（http://www.gmatonline.cn/learn/65.html）+OG+prep（建议08-12-07），如果是方法问题，可以看《小安阅读法》；长难句则看《杨鹏长难句》即可。</string>
+    <string name="str_rc_l">40%以下，需要背诵单词，长难句训练。精度阅读内容，掌握篇章结构。一篇阅读建议读2-3遍之后，再做题。资料的话，长难句可以看《杨鹏阅读难句》，方法及题型可以参照雷哥知识库（http://www.gmatonline.cn/learn/65.html），这时候，用OG来配合熟悉方法，稍微好一点之后，在做prep（建议08-12-07）</string>
+
+
+    <!--========================Q====================================-->
+    <string name="str_q_n">90%的正确率已经说明你的数学没有太大的问题，只有继续保持就可以了~多注意易错点就好。资料的话：自己的错题库+prep07（考前必做）</string>
+    <string name="str_q_e">80%-90%，首先查看自己对于DS题型的考试方式是否已全部知晓，这个正确率有很大可能性都是因为不了解DS考法，尤其是自己细想有没有找不出错题原因的题目。如果是，纠正思路。其次，查看是不是有术语或者数学表达方式不熟，要对其多加防范，总结句式例题。必要时，加强长难句训练。最后，易错点逐个攻破，加深印象。资料的话：自己的错题库+prep07（考前必做）知识点可以在雷哥知识库（http://www.gmatonline.cn/learn/66.html）里查看。</string>
+    <string name="str_q_f">60%-80%，一定是有某些知识点没有特别清楚。建议学习后，再练习习题，而不要一味的做题。知识点可以参考雷哥知识库（http://www.gmatonline.cn/learn/66.html），题目练习以prep07和OG为主。</string>
+    <string name="str_q_l">60%以下，背诵数学词汇，看数学知识点，逐个攻破。之后，再去做题。先看OG mathreview，掌握考试大纲及基本词汇后，再做OG数学部分。如果还有知识点有问题，可以看雷哥知识库（http://www.gmatonline.cn/learn/66.html）或《陈向东数学高分突破》或上网搜索，稍微熟悉一点后，再做prep07.</string>
+
+
+    <string name="str_preemptive_lesson">抢先学课</string>
+    <string name="str_free_trial">免费试听课程</string>
+    <string name="str_introductory_course">入门课程</string>
+    <string name="str_expert_lecturer">专家讲师</string>
+    <string name="str_current_mon_hot_course">本月热门课程</string>
+    <string name="str_search_more">查看更多>></string>
+    <string name="str_live_lesson">直播课</string>
+    <string name="str_video_lesson">视频课</string>
+    <string name="str_lesson_time">课时:%1$s时</string>
+    <string name="str_lesson_course_time">课时:%1$s</string>
+    <string name="str_teacher_detail">查看老师详情>></string>
+    <string name="str_about_lesson">约课</string>
+    <string name="str_lesson_search_num">浏览数：%1$s</string>
+    <string name="str_lesson_price">¥：%1$s</string>
+    <string name="str_lesson_every_open">开课时间：随时</string>
+    <string name="str_lesson_open_time">开课时间：%1$s</string>
+    <string name="str_play_times">%1$d\n播放</string>
+    <string name="str_stydy_times">%1$d\n上课</string>
+    <string name="str_hot_times"><![CDATA[共<font color="#eb9515">%1$d</font>人上课]]></string>
+    <string name="str_hot_go_lesson">上课</string>
+    <string name="str_teacher_lesson_number">已约：%1$d人</string>
+    <string name="str_gmat_detail_number">%1$s人已加入</string>
+    <string name="str_remark_reply">你有%1$s条新消息</string>
+
+    <!--==============================================-->
+    <!--试听列表      要改都的改-->
+    <!--<string name="trial_sc_teacher_des">授课老师：zora老师</string>-->
+    <!--<string name="trial_rc_teacher_des">授课老师：Bella老师</string>-->
+    <!--<string name="trial_cr_teacher_des">授课老师：雷哥Kevin</string>-->
+    <!--<string name="trial_math_teacher_des">授课老师：Gary老师</string>-->
+    <string name="trial_teacher_des">授课老师：%1$s</string>
+    <!--首页试听-->
+    <!--<string name="str_free_one_teacher">zora老师</string>-->
+    <!--<string name="str_free_two_teacher">Bella老师</string>-->
+    <!--<string name="str_free_thr_teacher">Kevin老师</string>-->
+    <!--<string name="str_free_four_teacher">Gary老师</string>-->
+    <!--==============================================-->
+
+    <!--<string name="trial_use_time_des">课程时长：1课时</string>-->
+    <string name="trial_use_time_des">课程时长：%1$s</string>
+
+    <string name="str_free_one_type">SC试听课程</string>
+    <string name="str_free_two_type">RC试听课程</string>
+    <string name="str_free_thr_type">CR试听课程</string>
+    <string name="str_free_four_type">数学试听课程</string>
+    <string name="str_free_one_try">试听课程</string>
+    <string name="str_free_times">1课时</string>
+    <string name="str_free_go_try">去试听</string>
+    <string name="str_intro_one_type">零基础学生\n如何开始\nGMAT700+\n之路</string>
+    <string name="str_intro_two_type">SC备考难点</string>
+    <string name="str_intro_thr_type">如何突破RC</string>
+    <string name="str_intro_four_type">数学备考难点</string>
+    <string name="str_pub_lesson_num">报名人数:%1$d人</string>
+
+    <string name="str_enter_you_name">请输入您的名字：</string>
+    <string name="str_enter_you_name_tip">请输入您的名字</string>
+    <string name="str_enter_you_phone">请输入您的电话：</string>
+    <string name="str_phone_error_tip">您输入的电话格式不正确</string>
+    <string name="str_enter_you_phone_tip">请输入您的电话</string>
+    <string name="str_about_lesson_tip">我们将在一个工作日内与你取得联系哦!</string>
+    <string name="str_please_write">请填写</string>
+    <string name="str_please_write_search_content">请输入查询内容</string>
+    <string name="str_confirm_commit">确认提交</string>
+    <string name="str_simu_record_des">题目总数:%1$s&#160;正确率:%2$s&#160;耗时:%3$s</string>
+    <string name="str_simu_record_make_des">已做%1$s题&#160;正确率:%2$s&#160;耗时:%3$s</string>
+    <string name="str_simu_record_title_des">%1$s&#160;-&#160;%2$s</string>
+    <string name="str_msg_des">%1$s：%2$s</string>
+    <string name="str_click_advisory">点击咨询</string>
+    <string name="str_person_intro">个人简介</string>
+    <string name="str_course_reservation">预约课程</string>
+    <string name="str_trial_course">试听</string>
+    <string name="str_trial_course_title">试听课</string>
+    <string name="str_gmat_trial_course_title">GMAT&#160;试听课</string>
+
+    <string name="str_main_left_center_setting">个人设置</string>
+    <string name="str_main_left_about_us">关于我们</string>
+    <string name="str_main_left_contact_us">联系我们</string>
+    <string name="str_main_left_copyright_des">版权说明</string>
+
+    <string name="str_about_us_des">雷哥GMAT在线，互联网GMAT一站式在线学习平台。提供包含GMAT在线做题、在线模考、在线测评、在线答疑、在线学习计划定制、录播视频课程、在线直播课程、免费公开课等一系列在线GMAT学习服务。\n\n  雷哥GMAT在线是在线教育领域里提供“在线做题+在线模考+在线答疑＋视频课程＋直播课程”一站式GMAT在线生态学习系统。集结了GMAT行业教学专家以及来自哈佛、耶鲁、哥大、MIT 、LSE等海外名师团队任教，为用户提供“名师专家课程”与“课后练习模考”的在线生态GMAT学习系统。</string>
+
+    <string name="str_copyright_des">版权声明\n一、用户账号 用户注册成功后，便成为雷哥GMAT的合法用户，会得到一个密码和帐号。用户需采取合理措施维护其密码和帐号的安全。用户对利用该密码和帐号所进行的一切活动负全部责任；由该等活动所导致的任何损失或损害由用户承担，雷哥GMAT不承担任何责任。\n\n二、用户承诺 用户同意遵守《中华人民共和国保守国家秘密法》、《中华人民共和国著作权法》、 《互联网电子公告服务管理规定》、《信息网络传播权保护条例》、《中华人民共和国计算机信息系统安全保护条例》、《计算机软件保护条例》等有关的法律、法规以及政府部门的规定。在任何情况下，如有他人投诉用户违反上述规定的，雷哥GMAT如果认为用户的行为可能违反上述法律、法规，雷哥GMAT可以在任何时候，有权不经事先通知终止向该用户提供服务。 雷哥GMAT欢迎用户举报任何违反上述法律或侵犯他人权利的上传内容，一经发现违法或侵权的上传内容，雷哥GMAT将根据相关的法律规定进行删除。 用户承诺使用雷哥GMAT的过程中，尊重原创作者知识产权等合法权益，不得采取下列行为： \n1、未经权利人许可，将不具有著作权的作品上传致雷哥GMAT；2、未经雷哥GMAT书面许可，将使用雷哥GMAT站所载作品进行复制及进行信息网络传播； 3、上传侵犯他人人身权的作品； 4、上传泄漏他人商业机密、个人隐私、国家机密作品或者言论的。\n\n三、处罚措施 1、如果雷哥GMAT发现用户违背本协议禁止性规定，有权利注销用户账户。用户发布或传送任何信息、通讯资料和其它内容，如被删除或未予储存，雷哥GMAT毋须承担任何责任。2、如果用户的违规行为侵犯他人权益或者违反国家法律禁止性规定，雷哥GMAT有权利向权利人以及国家主管机关公开用户注册信息，该行为不视为侵犯用户隐私权。 3、用户在注册账户时填写的电子邮件地址号码视为用户联系地址，就使用过程中出现的事宜，雷哥GMAT将通过该邮箱地址号码与用户进行联系。\n\n版权声明\n雷哥GMAT为非赢利性网站，所提供的资料仅供学习之用，下载后请及时删除，不得用于任何形式的商业性用途，否则由此产生的法律后果与本站无关。\n\n雷哥GMAT网站及其注册用户本网站内的资料提供者拥有此网站内所有资料的版权。未经雷哥GMAT的明确书面许可，任何人不得复制或仿造本网站内容。\n\n雷哥GMAT多站所有页面的版式、图片版权均为本站所有，未得到书面许可之前，不得用于除雷哥GMAT网站之外的任何其它站点。\n\n雷哥GMAT在建设中引用了互联网上的一些资源并对有明确来源的注明了出处，版权归原作者及网站所有，如果您对本站文章及资料的版权归属存有异议，请您致信service@gmatonline.cn，我们会在24小时内做出答复。\n\n网友在雷哥GMAT网站的原创作品，由雷哥GMAT网站与作者共同享有版权，其他网站或传统媒体如需使用，须与本站联系（service@gmatonline.cn），经过本站授权，方可转载，并在转载时注明原创作者及雷哥GMAT网站链接。\n\n雷哥GMAT对发表在网站内的文章有编辑整理的权利。\n\n雷哥GMAT论坛网友所发表的言论仅代表网友自己，与本站观点无关。\n\n阅读本文即表明您已经阅读并接受上述条款。</string>
+
+    <string name="str_counter_down">跳过（%1$d秒）</string>
+    <string name="str_jump">跳过</string>
+    <string name="str_community_post">发布于&#160;%1$s</string>
+    <string name="str_buy_tip">请在电脑端个人中心课程记录查看</string>
+    <string name="str_feed_hint_content">请输入反馈，我们将为你不断改进</string>
+    <string name="str_feed_hint_phone">请输入你的联系方式（可选）</string>
+    <string name="str_feed_commit">提交</string>
+    <string name="str_need_login_tip">需要登录才能继续哦!</string>
+
+    <string name="str_camera_title">拍照搜索</string>
+    <string name="str_again_camera">重新拍照</string>
+    <string name="str_recognize_result">识别结果：</string>
+    <string name="str_search_result">查找结果:</string>
+
+    <string name="str_login_tip_info">亲呀！</string>
+    <string name="str_login_tip_des">要登录才给看哦！</string>
+    <string name="str_login_tip_go">立即登录</string>
+
+    <string name="str_test_infomation_test_time">考试时间</string>
+    <string name="str_test_infomation_test_address">考试地址</string>
+    <string name="str_test_infomation_test_content">考试内容</string>
+    <string name="str_test_infomation_test_registration_process">报名流程</string>
+    <string name="str_test_infomation_test_price">考试费用</string>
+    <string name="str_test_infomation_test_review">成绩复议</string>
+    <string name="str_test_infomation_test_card">考试证件</string>
+    <string name="str_test_infomation_test_take">转考退考</string>
+    <string name="str_test_infomation_test_send_point_way">送分方式</string>
+
+    <string name="str_test_infomation">考试资讯</string>
+    <string name="str_machine_downlaod">鸡精更新</string>
+    <string name="str_material_downlaod">资料下载</string>
+    <string name="str_file_list">文件列表</string>
+    <string name="str_download_list">下载列表</string>
+
+    <string name="str_post_person"><![CDATA[发布人:<font color="#197fed">%1$s</font>]]></string>
+    <string name="str_item_download_person_num"><![CDATA[已有<font color="#eb9515">%1$s人</font><br/>下载]]></string>
+    <string name="str_high_score_story">高分故事</string>
+    <string name="str_high_score_user_name">姓名：%1$s</string>
+    <string name="str_high_score_out_time">出分时间：%1$s</string>
+    <string name="str_high_score_base">基础：%1$s</string>
+    <string name="str_high_score_class_type">班型：%1$s</string>
+    <string name="str_high_score_test_temes">考试次数：%1$s</string>
+    <string name="str_high_score_test_score">分数：%1$s</string>
+
+    <string name="str_dele">删除</string>
+    <string name="str_pdf">PDF</string>
+    <string name="str_word">WORD</string>
+    <string name="str_other">其他</string>
+    <string name="str_excel">EXCEL</string>
+    <string name="str_downloading_des">正在下载（%1$d）</string>
+    <string name="str_download_end_des">已下载（%1$d）</string>
+    <string name="str_file_no_exists">文件不存在或已损坏</string>
+    <string name="str_post_after_download">评论后才能下载</string>
+    <string name="str_open_fail">打开失败。请下载相应软件打开</string>
+    <string name="str_again_new_load">点击空白区域重新加载！</string>
+
+    <string name="str_gmat_sc">SC</string>
+    <string name="str_gmat_rc">RC</string>
+    <string name="str_gmat_math">数学</string>
+    <string name="str_gmat_no_base">零基础</string>
+    <string name="str_gmat_free_cr">CR</string>
+    <string name="str_special_hint">特别提示</string>
+    <string name="str_user_protocol_one_des">\u3000\u3000雷哥网在此特别提醒您（用户）在注册成为用户之前，请认真阅读本《用户协议》（以下简称“协议”），以确保您充分理解本协议中各条款。您的注册、登录、使用等行为将视为对本协议的接受，并同意接受本协议各项条款的约束。\n\u3000\u3000本协议约定雷哥网与用户之间关于“雷哥GMAT”应用软件服务使用的权利义务。本协议可由雷哥网随时更新，更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知，用户继续使用雷哥GMAT应用软件提供的服务将被视为接受修改后的协议，用户可在本网站查阅最新版协议条款。</string>
+    <string name="str_account_register">一、帐号注册</string>
+    <string name="str_user_protocol_des">\u3000\u30001.用户注册成功后即成为雷哥网的合法用户，注册成功后会得到一个账号密码，用户用该账号进行做题等一切活动，并对自己的行为负责，由此行为产生的一切行为后果均由自己承担，雷哥网不承担任何责任。\n\u3000\u30002.在用户注册及雷哥网搜集的信息包括但不限于用户的昵称、电话、邮箱和密码；雷哥网同意对这些信息的使用将受限于第三条用户个人隐私信息保护的约束。</string>
+    <string name="str_user_promise">二、用户承诺</string>
+    <string name="str_disclaimer">三、免责声明</string>
+    <string name="str_user_protocol_two_des">\u3000\u3000用户同意遵守《中华人民共和国保守国家秘密法》、《中华人民共和国著作权法》、《互联网电子公告服务管理规定》、《信息网络传播法保护条例》、《中华人民共和国计算机信息系统安全保护条例》等有关法律法规及政府部门的规定，一经发现，雷哥网将根据法律法规采取相应措施。</string>
+    <string name="str_user_protocol_trh_des">\u3000\u3000雷哥GMAT APP为互联网服务提供商，为GMAT学习用户提供在线考试学习服务及沟通交流平台，根据《侵权责任法》以及《信息网络传播权保护条例》规定，对于用户个人的侵权及违法行为，雷哥网不承担民事责任。</string>
+    <string name="str_user_protocol_title_arti">雷哥GMAT 用户注册协议</string>
+    <string name="str_read_and_check">请阅读用户协议并勾选框</string>
+
+</resources>

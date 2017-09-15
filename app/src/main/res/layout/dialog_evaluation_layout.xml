@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/icon_go_play"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/evaluation_title_style"
+            android:text="@string/evaluation_title"/>
+
+        <TextView
+            style="@style/evaluation_title_style"
+            android:layout_marginTop="@dimen/base_half_padding"
+            android:text="@string/evaluation_sec_title"/>
+
+        <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.LinearRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/border_space_normal"/>
+
+        <TextView
+            android:id="@+id/go_app_play_btn"
+            style="@style/evaluation_btn_style"
+            android:paddingBottom="@dimen/border_space_normal"
+            android:paddingTop="@dimen/border_space_sec_max"
+            android:text="@string/evaluation_one_btn_des"/>
+
+        <View style="@style/com_line"/>
+
+        <TextView
+            android:id="@+id/go_feed_back"
+            style="@style/evaluation_btn_style"
+            android:padding="@dimen/border_space_normal"
+            android:text="@string/evaluation_two_btn_des"/>
+
+        <View style="@style/com_line"/>
+
+        <TextView
+            android:id="@+id/close_evaluation_dialog"
+            style="@style/evaluation_btn_style"
+            android:padding="@dimen/border_space_normal"
+            android:text="@string/evaluation_thr_btn_des"
+            android:textColor="@color/color_option_gray"/>
+    </LinearLayout>
+</FrameLayout>

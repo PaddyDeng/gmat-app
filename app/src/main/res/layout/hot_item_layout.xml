@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/hot_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_height"
+        android:scaleType="center"/>
+
+    <TextView
+        android:id="@+id/hot_item_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/hot_item_bg"
+        android:background="#99939393"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="@dimen/border_space_half"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_ml"/>
+
+    <TextView
+        android:id="@+id/hot_item_number"
+        style="@style/play_times_style"/>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        style="@style/custome_title_bar_style">
+
+        <ImageView style="@style/black_bg_title_back"/>
+
+        <TextView
+            android:id="@+id/simulation_title_tv"
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"
+            android:text="@string/str_search_result_detail"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/result_answer_detail_btn"
+                style="@style/eye_style"
+                android:layout_width="@dimen/detail_img_size"
+                android:layout_height="@dimen/detail_img_size"/>
+
+            <ImageView
+                android:id="@+id/result_collection_btn"
+                android:layout_width="@dimen/detail_img_size"
+                android:layout_height="@dimen/detail_img_size"
+                android:layout_marginRight="@dimen/border_space_sec_max"
+                android:layout_toLeftOf="@id/result_answer_detail_btn"
+                android:src="@drawable/test_collect_topic_sele"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/topic_serial_num_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_black"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/question_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

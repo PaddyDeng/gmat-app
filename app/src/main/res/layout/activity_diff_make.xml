@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diff_make_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/custome_title_bar_style">
+
+        <ImageView style="@style/black_bg_title_back"/>
+
+        <TextView
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"
+            android:text="@string/str_difficulty_make"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/diff_one_item_container"
+        style="@style/know_practice_container_style"
+        android:layout_marginTop="@dimen/border_space_normal">
+
+        <LinearLayout
+            style="@style/wrapWidthH"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/know_practice_tv_style"
+                android:text="@string/str_diff_one_item"/>
+
+            <TextView style="@style/know_practice_btn_style"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/diff_two_item_container"
+        style="@style/know_practice_container_style">
+
+        <LinearLayout
+            style="@style/wrapWidthH"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/know_practice_tv_style"
+                android:text="@string/str_diff_two_item"/>
+
+            <TextView style="@style/know_practice_btn_style"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/diff_thr_item_container"
+        style="@style/know_practice_container_style">
+
+        <LinearLayout
+            style="@style/wrapWidthH"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/know_practice_tv_style"
+                android:text="@string/str_diff_thr_item"/>
+
+            <TextView style="@style/know_practice_btn_style"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/diff_four_item_container"
+        style="@style/know_practice_container_style">
+
+        <LinearLayout
+            style="@style/wrapWidthH"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/know_practice_tv_style"
+                android:text="@string/str_diff_four_item"/>
+
+            <TextView style="@style/know_practice_btn_style"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/diff_five_item_container"
+        style="@style/know_practice_container_style">
+
+        <LinearLayout
+            style="@style/wrapWidthH"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/know_practice_tv_style"
+                android:text="@string/str_diff_five_item"/>
+
+            <TextView style="@style/know_practice_btn_style"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/diff_six_item_container"
+        android:layout_marginBottom="@dimen/border_space_normal"
+        style="@style/know_practice_container_style">
+
+        <LinearLayout
+            style="@style/wrapWidthH"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/know_practice_tv_style"
+                android:text="@string/str_diff_six_item"/>
+
+            <TextView style="@style/know_practice_btn_style"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

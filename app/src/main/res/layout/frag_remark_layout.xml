@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/remark_title_bar"-->
+        <!--style="@style/custome_title_bar_style"-->
+        <!--android:background="@color/color_black"-->
+        <!--android:visibility="gone">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/remark_title_menu"-->
+            <!--style="@style/main_nav_title_menu"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/know_detail_title"-->
+            <!--style="@style/title_tv_style"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="@string/str_pro_forma"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/remark_comm_img"-->
+            <!--style="@style/main_nav_title_set"-->
+            <!--android:paddingBottom="@dimen/base_padding"-->
+            <!--android:paddingLeft="@dimen/base_padding"-->
+            <!--android:paddingRight="@dimen/base_padding"-->
+            <!--android:paddingTop="@dimen/base_padding"-->
+            <!--android:src="@drawable/icon_community"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/remark_content_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.pullrefresh.PullRefreshLayout
+            android:id="@+id/remark_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/remark_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </org.zywx.wbpalmstar.widgetone.uex11597450.weiget.pullrefresh.PullRefreshLayout>
+
+
+    <!--</RelativeLayout>-->
+</LinearLayout>

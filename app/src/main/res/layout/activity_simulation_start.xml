@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/simulation_start_title_container"
+        style="@style/custome_title_bar_style">
+
+        <ImageView
+            style="@style/black_bg_title_back"/>
+
+        <TextView
+            android:id="@+id/simulation_start_title"
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/simulation_click_start_btn"
+        style="@style/com_blue_btn"
+        android:text="@string/str_simulation_click_start"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/simulation_click_start_btn"
+        android:layout_below="@id/simulation_start_title_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_clock"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/border_space_thr"
+                android:layout_marginTop="@dimen/border_space_sec_max_m"
+                android:text="@string/str_simulation_start_tip"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_ml"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/quant_part_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/border_space_sec_max"
+                    android:layout_marginRight="@dimen/border_space_sec_max"
+                    android:background="@drawable/blue_dialog_shape"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/simulation_start_title_style"
+                        android:text="@string/str_simulation_start_quant_part"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/border_space_sec_max_m"
+                        android:paddingTop="@dimen/border_space_sec_max_m"
+                        android:text="@string/str_simulation_start_quant_des"
+                        android:textColor="@color/color_black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/verbal_part_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/border_space_sec_max"
+                    android:layout_marginRight="@dimen/border_space_sec_max"
+                    android:background="@drawable/blue_dialog_shape"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/simulation_start_title_style"
+                        android:text="@string/str_simulation_start_verbal_part"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/border_space_sec_max_m"
+                        android:paddingTop="@dimen/border_space_sec_max_m"
+                        android:text="@string/str_simulation_start_verbal_des"
+                        android:textColor="@color/color_black"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

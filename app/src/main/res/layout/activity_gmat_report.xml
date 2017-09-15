@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/custome_title_bar_style">
+
+        <ImageView style="@style/black_bg_title_back"/>
+
+        <TextView
+            android:id="@+id/report_title_tv"
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"
+            android:text="@string/str_test_gmat_report"/>
+
+        <ImageView
+            android:id="@+id/show_pop_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/border_space"
+            android:layout_toRightOf="@id/report_title_tv"
+            android:padding="@dimen/base_half_padding"
+            android:src="@drawable/more_report"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/border_space_thr"
+            android:paddingLeft="@dimen/border_space_sec_max"
+            android:paddingRight="@dimen/border_space_sec_max">
+
+            <TextView
+                android:id="@+id/report_part_tv"
+                style="@style/report_txt_style"
+                android:text="@string/str_report_verbal"/>
+
+            <!--单项需要的圆块图-->
+
+            <LinearLayout
+                android:id="@+id/single_circle_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.ChartView
+                        android:id="@+id/sin_chart_correct"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/card_height"
+                        app:circleRadius="@dimen/border_space_thr_max"
+                        app:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                        android:id="@+id/correct_avg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/str_correct_avg_des"/>
+                </LinearLayout>
+
+
+                <View style="@style/verctical_line"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.ChartView
+                        android:id="@+id/sin_chart_pace"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/card_height"
+                        app:circleRadius="@dimen/border_space_thr_max"
+                        app:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                        android:id="@+id/pace_min_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/str_pace_min_des"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/correct_no_q_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/report_one_weight_tv_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        style="@style/report_tab_tv_style"
+                        android:text="@string/str_report_avg_correct"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        style="@style/report_tab_tv_style"
+                        android:text="@string/str_report_pace"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/com_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/report_one_weight_tv_style"
+                        android:padding="@dimen/border_space_sec"
+                        android:text="SC"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        android:id="@+id/sc_avg_tv"
+                        style="@style/report_tab_tv_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        android:id="@+id/sc_pace_tv"
+                        style="@style/report_tab_tv_style"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/com_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/report_one_weight_tv_style"
+                        android:padding="@dimen/border_space_sec"
+                        android:text="RC"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        android:id="@+id/rc_avg_tv"
+                        style="@style/report_tab_tv_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        android:id="@+id/rc_pace_tv"
+                        style="@style/report_tab_tv_style"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/com_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/report_one_weight_tv_style"
+                        android:padding="@dimen/border_space_sec"
+                        android:text="CR"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        android:id="@+id/cr_avg_tv"
+                        style="@style/report_tab_tv_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        android:id="@+id/cr_pace_tv"
+                        style="@style/report_tab_tv_style"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/know_point_des_title"
+                style="@style/report_txt_style"
+                android:layout_marginBottom="@dimen/border_space_half"
+                android:text="@string/str_test_point_analysis"/>
+
+            <TextView
+                android:id="@+id/know_point_anal_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_test_point_analysis_des"/>
+
+            <LinearLayout
+                android:id="@+id/modify_read_l_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/border_space"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/modify_sc_tv"
+                    style="@style/report_one_weight_tv_style"
+                    android:background="@drawable/report_sele_bg"
+                    android:padding="@dimen/border_space_sec"
+                    android:text="@string/str_report_mistake_sc"
+                    android:textColor="@color/remark_color_selector"/>
+
+                <View style="@style/verctical_line"/>
+
+                <TextView
+                    android:id="@+id/read_rc_tv"
+                    style="@style/report_one_weight_tv_style"
+                    android:background="@drawable/report_sele_bg"
+                    android:padding="@dimen/border_space_sec"
+                    android:text="@string/str_know_read"
+                    android:textColor="@color/remark_color_selector"/>
+
+                <View style="@style/verctical_line"/>
+
+                <TextView
+                    android:id="@+id/l_cr_tv"
+                    style="@style/report_one_weight_tv_style"
+                    android:background="@drawable/report_sele_bg"
+                    android:padding="@dimen/border_space_sec"
+                    android:text="@string/str_know_logic"
+                    android:textColor="@color/remark_color_selector"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/know_point_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/border_space"
+                android:layout_marginTop="@dimen/border_space"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/base_padding"
+                    android:text="*"
+                    android:textColor="@color/color_red"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="总分700分一般要求SC正确率达到80%以上。若其他科目也能达到此水平，目标分数可以达到700+以上了哦~"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/report_diff_level_tv"
+                style="@style/report_txt_style"
+                android:layout_marginBottom="@dimen/border_space_half"
+                android:text="@string/str_report_diff_level"/>
+
+            <!-- 难度水平 -->
+            <LinearLayout
+                android:id="@+id/report_diff_level_tab_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/report_one_weight_tv_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+
+                    <TextView
+                        style="@style/diff_level_style"
+                        android:text="@string/str_diff_one_item"/>
+
+                    <View style="@style/verctical_line"/>
+
+
+                    <TextView
+                        style="@style/diff_level_style"
+                        android:text="@string/str_diff_two_item"/>
+
+                    <View style="@style/verctical_line"/>
+
+
+                    <TextView
+                        style="@style/diff_level_style"
+                        android:text="@string/str_diff_thr_sec_item"/>
+
+                    <View style="@style/verctical_line"/>
+
+
+                    <TextView
+                        style="@style/diff_level_style"
+                        android:text="@string/str_diff_max_item"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/com_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/report_one_weight_tv_style"
+                        android:padding="@dimen/border_space_sec"
+                        android:text="SC"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        android:id="@+id/sc_level_one_tv"
+                        style="@style/report_diff_level_content_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        android:id="@+id/sc_level_two_tv"
+                        style="@style/report_diff_level_content_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        android:id="@+id/sc_level_thr_tv"
+                        style="@style/report_diff_level_content_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        android:id="@+id/sc_level_four_tv"
+                        style="@style/report_diff_level_content_style"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/com_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/report_one_weight_tv_style"
+                        android:padding="@dimen/border_space_sec"
+                        android:text="RC"/>
+
+                    <View style="@style/verctical_line"/>
+
+
+                    <TextView
+                        android:id="@+id/rc_level_one_tv"
+                        style="@style/report_diff_level_content_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+
+                    <TextView
+                        android:id="@+id/rc_level_two_tv"
+                        style="@style/report_diff_level_content_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+                    <TextView
+                        android:id="@+id/rc_level_thr_tv"
+                        style="@style/report_diff_level_content_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+
+                    <TextView
+                        android:id="@+id/rc_level_four_tv"
+                        style="@style/report_diff_level_content_style"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/com_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/report_one_weight_tv_style"
+                        android:padding="@dimen/border_space_sec"
+                        android:text="CR"/>
+
+                    <View style="@style/verctical_line"/>
+
+
+                    <TextView
+                        android:id="@+id/cr_level_one_tv"
+                        style="@style/report_diff_level_content_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+
+                    <TextView
+                        android:id="@+id/cr_level_two_tv"
+                        style="@style/report_diff_level_content_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+
+                    <TextView
+                        android:id="@+id/cr_level_thr_tv"
+                        style="@style/report_diff_level_content_style"/>
+
+                    <View style="@style/verctical_line"/>
+
+
+                    <TextView
+                        android:id="@+id/cr_level_four_tv"
+                        style="@style/report_diff_level_content_style"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/quant_part_tv"
+                style="@style/report_txt_style"
+                android:layout_marginBottom="@dimen/border_space_half"
+                android:text="@string/str_report_quant"/>
+
+            <!-- QUANT部分 -->
+            <LinearLayout
+                android:id="@+id/quant_part_circle_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.ChartView
+                        android:id="@+id/chart_avg_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/card_height"
+                        app:circleRadius="@dimen/border_space_thr_max"
+                        app:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                        android:id="@+id/q_avg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/str_correct_avg_des"/>
+                </LinearLayout>
+
+
+                <View style="@style/verctical_line"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.ChartView
+                        android:id="@+id/chart_pace_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/card_height"
+                        app:circleRadius="@dimen/border_space_thr_max"
+                        app:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                        android:id="@+id/q_pace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/str_pace_min_des"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/report_txt_style"
+                android:layout_marginBottom="@dimen/border_space_half"
+                android:text="@string/str_report_current_status"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/border_space_half"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/border_space_half"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/whole_one_des"
+                        style="@style/current_diff_level_left_style"/>
+
+                    <TextView
+                        android:id="@+id/whole_two_des"
+                        style="@style/current_diff_level_right_style"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/whole_thr_des"
+                        style="@style/current_diff_level_left_style"/>
+
+                    <TextView
+                        android:id="@+id/whole_four_des"
+                        style="@style/current_diff_level_right_style"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/report_txt_style"
+                android:layout_marginBottom="@dimen/border_space_half"
+                android:text="@string/str_report_all_staus"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/review_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/border_space_max_max"
+                    android:src="@drawable/icon_review_staus"/>
+
+                <TextView
+                    android:id="@+id/all_des_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/border_space_sec_max"
+                    android:layout_toRightOf="@id/review_img"/>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/report_txt_style"
+                android:layout_marginBottom="@dimen/border_space_half"
+                android:text="@string/str_report_review_gap"/>
+
+            <LinearLayout
+                android:id="@+id/report_gat_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/all_sc_tv"
+                    style="@style/report_one_weight_tv_style"
+                    android:background="@drawable/report_sele_bg"
+                    android:padding="@dimen/border_space_sec"
+                    android:text="SC"
+                    android:textColor="@color/remark_color_selector"/>
+
+                <TextView
+                    android:id="@+id/all_rc_tv"
+                    style="@style/report_one_weight_tv_style"
+                    android:background="@drawable/report_sele_bg"
+                    android:padding="@dimen/border_space_sec"
+                    android:text="RC"
+                    android:textColor="@color/remark_color_selector"/>
+
+                <TextView
+                    android:id="@+id/all_cr_tv"
+                    style="@style/report_one_weight_tv_style"
+                    android:background="@drawable/report_sele_bg"
+                    android:padding="@dimen/border_space_sec"
+                    android:text="CR"
+                    android:textColor="@color/remark_color_selector"/>
+
+                <TextView
+                    android:id="@+id/all_q_tv"
+                    style="@style/report_one_weight_tv_style"
+                    android:background="@drawable/report_sele_bg"
+                    android:padding="@dimen/border_space_sec"
+                    android:text="Q"
+                    android:textColor="@color/remark_color_selector"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/review_detail_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:padding="@dimen/border_space_half"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

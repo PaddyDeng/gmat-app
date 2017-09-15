@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/simulation_test_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/custome_title_bar_style">
+
+        <ImageView style="@style/black_bg_title_back"/>
+
+        <TextView
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"
+            android:text="@string/str_simulation_test"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/simulation_language_container"
+        style="@style/simulation_container_style"
+        android:layout_marginTop="@dimen/border_space_sec_max_m">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/simulation_title_tv_style"
+                android:text="@string/str_sim_language_title"/>
+
+            <TextView
+                style="@style/simulation_des_tv_style"
+                android:text="@string/str_sim_language_des"/>
+
+            <TextView style="@style/know_practice_btn_style"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/simulation_math_container"
+        style="@style/simulation_container_style">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/simulation_title_tv_style"
+                android:text="@string/str_sim_math_title"/>
+
+            <TextView
+                style="@style/simulation_des_tv_style"
+                android:text="@string/str_sim_math_des"/>
+
+            <TextView style="@style/know_practice_btn_style"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/simulation_all_container"
+        style="@style/simulation_container_style"
+        android:layout_marginBottom="@dimen/border_space_sec_max_m">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/simulation_title_tv_style"
+                android:text="@string/str_sim_all_title"/>
+
+            <TextView
+                style="@style/simulation_des_tv_style"
+                android:text="@string/str_sim_all_des"/>
+
+            <TextView style="@style/know_practice_btn_style"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

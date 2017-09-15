@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_register_bg">
+    <!--back-->
+    <ImageView
+        style="@style/title_back"/>
+
+    <ImageView
+        android:id="@+id/trans_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/mine_login"/>
+
+    <LinearLayout
+        android:id="@+id/login_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trans_pic"
+        android:layout_marginLeft="@dimen/border_space_thr_max"
+        android:layout_marginRight="@dimen/border_space_thr"
+        android:layout_marginTop="@dimen/border_space_max_max"
+        android:background="@drawable/login_shape_bg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_user"
+            style="@style/login_edit_style"
+            android:drawableLeft="@drawable/login_head"
+            android:drawablePadding="@dimen/border_space_sec"
+            android:hint="@string/str_login_account"/>
+
+        <View style="@style/login_register_line"/>
+
+        <EditText
+            android:id="@+id/login_pwd"
+            style="@style/login_edit_style"
+            android:drawableLeft="@drawable/login_pw"
+            android:drawablePadding="@dimen/border_space_sec"
+            android:hint="@string/str_login_pw_hint"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/btn_login_style"
+        android:layout_below="@id/login_container"
+        android:layout_marginTop="@dimen/border_space_sec_max_m"
+        android:text="@string/str_login"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/border_space_half">
+
+        <TextView
+            android:id="@+id/immediately_regist"
+            style="@style/login_type_style"
+            android:text="@string/str_immde_register"/>
+
+        <TextView
+            style="@style/login_type_style"
+            android:visibility="gone"
+            android:text=" | "/>
+
+        <TextView
+            android:id="@+id/use_qq_login"
+            android:visibility="gone"
+            style="@style/login_type_style"
+            android:text="@string/str_use_qq_login"/>
+
+        <TextView
+            style="@style/login_type_style"
+            android:text=" | "/>
+
+        <TextView
+            android:id="@+id/forgive_pwd"
+            style="@style/login_type_style"
+            android:text="@string/str_forget_ps"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/custome_title_bar_style">
+
+        <ImageView style="@style/black_bg_title_back"/>
+
+        <TextView
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"
+            android:text="@string/str_main_center_my_keep"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_darkness"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/collection_og"
+            style="@style/single_contact_tab_txt_style"
+            android:text="@string/str_collection_og"/>
+
+        <TextView
+            android:id="@+id/collection_prep"
+            style="@style/single_contact_tab_txt_style"
+            android:text="@string/str_collection_prep"/>
+
+        <TextView
+            android:id="@+id/collection_lecture"
+            style="@style/single_contact_tab_txt_style"
+            android:text="@string/str_collection_lecture"/>
+
+
+        <TextView
+            android:id="@+id/collection_gwd"
+            style="@style/single_contact_tab_txt_style"
+            android:text="@string/str_collection_gwd"/>
+
+        <TextView
+            android:id="@+id/collection_mhd"
+            android:layout_weight="1.5"
+            style="@style/single_contact_tab_txt_style"
+            android:text="@string/str_collection_manhattan"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_darkness"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/single_contact_sc"
+            style="@style/single_contact_tab_txt_style"
+            android:text="SC"/>
+
+        <TextView
+            android:id="@+id/single_contact_cr"
+            style="@style/single_contact_tab_txt_style"
+            android:text="CR"/>
+
+        <TextView
+            android:id="@+id/single_contact_rc"
+            style="@style/single_contact_tab_txt_style"
+            android:text="RC"/>
+
+        <TextView
+            android:id="@+id/single_contact_pc"
+            style="@style/single_contact_tab_txt_style"
+            android:text="PS"/>
+
+        <TextView
+            android:id="@+id/single_contact_ds"
+            style="@style/single_contact_tab_txt_style"
+            android:text="DS"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/collection_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

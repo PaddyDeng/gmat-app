@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.SlidingMenu
+        android:id="@+id/slidingmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal">-->
+
+            <include layout="@layout/leftmenu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/main_contaier"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <View
+                    android:id="@+id/nav_line"
+                    style="@style/line"
+                    android:background="@color/color_sec_gray" />
+
+                <LinearLayout
+                    android:id="@+id/nav_containre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/main_nav_gmat"
+                        style="@style/main_nav_style"
+                        android:drawableTop="@drawable/tab4_selector"
+                        android:text="@string/str_gmat" />
+
+                    <TextView
+                        android:id="@+id/main_nav_make"
+                        style="@style/main_nav_style"
+                        android:drawableTop="@drawable/tab1_selector"
+                        android:text="@string/str_make_test" />
+
+                    <TextView
+                        android:id="@+id/main_nav_pro"
+                        style="@style/main_nav_style"
+                        android:drawableTop="@drawable/tab3_selector"
+                        android:text="@string/str_pro_forma" />
+                    
+                    <TextView
+                        android:id="@+id/main_nav_know"
+                        style="@style/main_nav_style"
+                        android:drawableTop="@drawable/tab2_selector"
+                        android:text="@string/str_knowledge" />
+
+                    <TextView
+                        android:id="@+id/main_nav_center"
+                        style="@style/main_nav_style"
+                        android:drawableTop="@drawable/tab5_selector"
+                        android:text="@string/str_user_center" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        <!--</LinearLayout>-->
+    </org.zywx.wbpalmstar.widgetone.uex11597450.weiget.SlidingMenu>
+</RelativeLayout>

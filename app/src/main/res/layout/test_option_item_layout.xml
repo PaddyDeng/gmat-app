@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wrapHeight">
+
+    <TextView
+        android:id="@+id/option_sele_tv"
+        style="@style/test_option_sele_tv_style"/>
+
+    <LinearLayout
+        android:id="@+id/option_container_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/option_sele_tv"
+        android:background="@drawable/option_sele_bg_selector"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/option_sele_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_ml"/>
+
+        <ImageView
+            android:id="@+id/option_sele_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

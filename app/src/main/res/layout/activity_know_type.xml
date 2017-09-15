@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_know_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/custome_title_bar_style">
+
+        <ImageView
+            style="@style/black_bg_title_back"/>
+
+        <TextView
+            android:id="@+id/know_type_title"
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="@dimen/border_space_sec_max_m"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/know_type_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+        </LinearLayout>
+    </org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView>
+
+
+</LinearLayout>

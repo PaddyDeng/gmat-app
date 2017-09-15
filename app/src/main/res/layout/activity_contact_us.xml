@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/custome_title_bar_style">
+
+        <ImageView
+            style="@style/black_bg_title_back"/>
+
+        <TextView
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"
+            android:text="@string/str_main_left_contact_us"/>
+    </RelativeLayout>
+
+
+    <TextView
+        style="@style/contact_des_tv_style"
+        android:text="@string/str_contact_us_gov_wx"/>
+
+    <TextView
+        android:id="@+id/gov_wx"
+        style="@style/contact_content_tv_style"
+        android:text="@string/str_contact_us_gov_wx_detal"/>
+
+    <TextView
+        style="@style/contact_des_tv_style"
+        android:text="@string/str_contact_us_sina"/>
+
+    <TextView
+        android:id="@+id/sina_online"
+        style="@style/contact_content_tv_style"
+        android:text="@string/str_contact_us_online"/>
+
+    <TextView
+        style="@style/contact_des_tv_style"
+        android:text="@string/str_contact_us_service_email"/>
+
+    <TextView
+        android:id="@+id/gmat_service_email"
+        style="@style/contact_content_tv_style"
+        android:text="@string/str_contact_us_email_detail"/>
+
+
+    <TextView
+        style="@style/contact_des_tv_style"
+        android:text="@string/str_contact_us_service_phone"/>
+
+    <TextView
+        android:id="@+id/gmat_service_phone"
+        style="@style/contact_content_tv_style"
+        android:text="@string/str_contact_us_service_phone_num"/>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/border_space_sec_max">
+
+        <ImageView
+            android:id="@+id/know_practice_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/icon_next"/>
+
+        <TextView
+            android:id="@+id/know_practice_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/border_space"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_ml"/>
+
+        <TextView
+            android:id="@+id/know_practice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/know_practice_title_tv"
+            android:layout_marginBottom="@dimen/border_space"
+            android:layout_marginTop="@dimen/border_space"
+            android:textSize="@dimen/text_size_small"/>
+
+        <View
+            style="@style/com_line"
+            android:layout_below="@id/know_practice_content"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.zywx.wbpalmstar.widgetone.uex11597450.weiget.font.ControlTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawablePadding="@dimen/border_space"
+    android:drawableRight="@drawable/know_next"
+    android:padding="@dimen/border_space_sec_max"
+    android:text="CR备考篇"
+    android:textColor="@color/color_black"
+    android:textSize="@dimen/text_size_ml"/>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/know_title_rl"
+        style="@style/custome_title_bar_style">
+
+        <ImageView
+            style="@style/black_bg_title_back"/>
+
+        <TextView
+            android:id="@+id/know_content_title"
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.OverScrollRecyclerView
+        android:id="@+id/know_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/know_title_rl"/>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/know_recycler"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/know_title_rl"/>-->
+
+</RelativeLayout>

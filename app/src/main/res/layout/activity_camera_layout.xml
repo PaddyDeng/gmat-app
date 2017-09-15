@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/custome_title_bar_style">
+
+        <ImageView
+            style="@style/black_bg_title_back"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/go_on_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/border_space"
+            android:padding="@dimen/border_space"
+            android:text="@string/str_again_camera"
+            android:textColor="@color/color_white"/>
+
+        <TextView
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"
+            android:text="@string/str_camera_title"/>
+
+        <Button
+            android:id="@+id/question_search_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="@dimen/border_space"
+            android:text="@string/str_cancel"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_ms"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_space_max_min"
+        android:background="@color/color_white">
+
+        <!--<Button-->
+        <!--android:id="@+id/question_search_cancel_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@null"-->
+        <!--android:paddingLeft="@dimen/border_space"-->
+        <!--android:text="@string/str_cancel"-->
+        <!--android:textColor="@color/color_darkness"-->
+        <!--android:textSize="@dimen/text_size_ms"/>-->
+
+        <EditText
+            android:id="@+id/question_search_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/border_space"
+            android:background="@null"
+            android:drawablePadding="5dip"
+            android:hint="@string/str_please_write_search_content"
+            android:maxLines="1"
+            android:padding="@dimen/border_space"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/color_sec_gray"
+            android:textSize="@dimen/text_size_small"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/border_space_sec_max">
+
+        <ImageView
+            android:id="@+id/camera_crop_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:id="@+id/recognize_camera_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/camera_result_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/border_space_sec_max"
+            android:textColor="@color/color_orange"/>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

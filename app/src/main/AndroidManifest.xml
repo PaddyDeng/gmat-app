@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="org.zywx.wbpalmstar.widgetone.uex11597450">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- =========================分享======================================= -->
+    <!-- <uses-permission android:name="android.permission.GET_TASKS" /> -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <!-- 蓝牙分享所需的权限 -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH" /> -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> -->
+    <!-- =========================分享======================================= -->
+
+
+    <!-- =========================讯飞======================================= -->
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_SETTINGS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
+
+
+    <!-- =========================极光推送======================================= -->
+
+
+    <!-- Required -->
+    <permission
+        android:name=".permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="org.zywx.wbpalmstar.widgetone.uex11597450.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <!-- bugly -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <!-- ======================================================================== -->
+    <application
+        android:name=".GmatApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_luncher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleFullTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ocr.camera.CameraActivity"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="org.zywx.wbpalmstar.widgetone.uex11597450.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths"/>
+        </provider>
+
+        <!-- ============================分享================================== -->
+
+
+        <!-- qq登录 -->
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="101228026"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- ============================分享================================== -->
+
+
+        <!-- ============================推送================================== -->
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="org.zywx.wbpalmstar.widgetone.uex11597450"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+
+                <category android:name="org.zywx.wbpalmstar.widgetone.uex11597450"/>
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/> <!-- Required  显示通知栏 -->
+                <category android:name="org.zywx.wbpalmstar.widgetone.uex11597450"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false"/>
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".push.CustomerReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="org.zywx.wbpalmstar.widgetone.uex11597450"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"/>
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="48d394be4f131e9d8fd3f2e5"/> <!-- </>值来自开发者平台取得的AppKey -->
+
+
+        <!-- ============================================================== -->
+
+        <activity
+            android:name=".ui.user.LoginAactivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.user.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.user.RetrievePwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.setting.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.center.WrongRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.konw.KnowTypeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.konw.KnowCateListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.konw.KnowDetailActivity"
+            android:screenOrientation="portrait"/>
+        <!-- android:windowSoftInputMode="adjustPan" -->
+        <activity
+            android:name=".ui.remark.RemarkDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.remark.PostRemarkActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.remark.ImagePagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.singlepractice.SinglePracticeActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".service.DBService"/>
+        <service android:name=".service.DownDbService"/>
+
+        <activity
+            android:name=".ui.make.knowpoint.KnowPointPracticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.difficultymake.DiffMakeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.simulationtest.SimulationTestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.difficultymake.DiffDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.TestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.knowpoint.KnowPointListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.simulationtest.SimulationTestListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.simulationtest.SimulationStartActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.GmatTestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.simulationtest.SimulationResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.simulationtest.SimulationResultDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.GmatReportActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.common.DealActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.gmat.PreProGramLessonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AlphaDialogAct"/>
+        <activity
+            android:name=".ui.center.MakeRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.center.SimulationRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.center.MsgActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.gmat.GmatDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.gmat.TeacherDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.gmat.TrialCourseTypeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.remark.RemarkNewMsgActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.center.collect.CollectionSlideActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.center.collect.CollectionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.setting.ClipImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.common.DesActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.center.ContactUsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.AdvertisingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AdvNoTitleFullTheme"/>
+        <activity
+            android:name=".ui.make.search.TopicSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.center.TopicRecordDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.center.buyrecord.BuyRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.search.SearchQuestionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentTheme"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.remark.CommunityDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.setting.FeedBackActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.search.CameraSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.setting.FontSizeSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.center.FileListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.remark.community.DownloadListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.remark.community.DownloadRichTextActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.user.SetNickNameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.search.PicSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.intelligent.OrderPracticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.test.TopicDiscussionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.make.test.TopicErrorFBActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+            android:name=".ui.make.test.AskQuestionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.remark.HighScoreDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.user.UserProtocolDealActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

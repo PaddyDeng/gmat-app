@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_test_border">
+
+    <RelativeLayout
+        android:id="@+id/gmat_test_title_container"
+        style="@style/custome_title_bar_style">
+
+        <ImageView
+            android:id="@+id/gmat_test_back"
+            style="@style/black_bg_title_back"
+            android:src="@drawable/icon_test_title_left"/>
+
+        <TextView
+            android:id="@+id/gmat_test_title"
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"/>
+        <RelativeLayout
+            android:id="@+id/simulation_clock_container"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/border_space_sec_m"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/gmat_simulation_show_time_img"
+                android:layout_width="@dimen/border_space_sec_max_m"
+                android:layout_height="@dimen/border_space_sec_max_m"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_make_test_time_place"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gmat_test_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_ml"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/gmat_test_collection_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/border_space_sec_max"
+            android:layout_toLeftOf="@id/simulation_clock_container"
+            android:src="@drawable/test_collect_topic_sele"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/gmat_test_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/test_next_bg_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/border_space_sec_m"
+        android:paddingTop="@dimen/border_space_sec_m"
+        android:text="@string/str_test_next_sub"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_ml"/>
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView
+        android:id="@+id/test_nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@id/gmat_test_next"
+        android:layout_below="@id/gmat_test_title_container">
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/border_space_sec_max"
+            android:layout_marginRight="@dimen/border_space_sec_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View style="@style/test_line_style"/>
+
+            <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.CustomerWebView
+                android:id="@+id/gmat_title_webview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_marginBottom="@dimen/border_space_sec"
+                android:background="@color/color_white"/>
+
+
+            <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.GeneralView
+                android:id="@+id/gmat_test_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"/>
+
+            <View style="@style/test_one_height_line_style"/>
+
+            <LinearLayout
+                android:id="@+id/gmat_option_contaienr"
+                style="@style/option_container_style">
+            </LinearLayout>
+        </LinearLayout>
+    </org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView>
+
+    <include
+        layout="@layout/rest_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gmat_test_title_container"/>
+
+</RelativeLayout>

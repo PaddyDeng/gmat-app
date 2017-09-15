@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/custome_title_bar_style">
+
+        <ImageView
+            style="@style/black_bg_title_back"/>
+
+        <TextView
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:text="@string/str_user_protocol_title"/>
+
+    </RelativeLayout>
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/border_space_sec_max">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/border_space"
+                    android:gravity="center"
+                    android:text="@string/str_user_protocol_title_arti"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    style="@style/user_procotol_title_style"
+                    android:text="@string/str_special_hint"/>
+
+                <TextView
+                    style="@style/user_procotol_content_des"
+                    android:text="@string/str_user_protocol_one_des"/>
+
+                <TextView
+                    style="@style/user_procotol_title_style"
+                    android:text="@string/str_account_register"/>
+
+                <TextView
+                    style="@style/user_procotol_content_des"
+                    android:text="@string/str_user_protocol_des"/>
+
+                <TextView
+                    style="@style/user_procotol_title_style"
+                    android:text="@string/str_user_promise"/>
+
+                <TextView
+                    style="@style/user_procotol_content_des"
+                    android:text="@string/str_user_protocol_two_des"/>
+
+                <TextView
+                    style="@style/user_procotol_title_style"
+                    android:text="@string/str_disclaimer"/>
+
+                <TextView
+                    style="@style/user_procotol_content_des"
+                    android:text="@string/str_user_protocol_trh_des"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView>
+
+</LinearLayout>

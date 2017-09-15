@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/detail_more"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pop_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/border_space"
+        android:text="@string/str_test_gmat_report"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_sec_gray"/>
+
+    <TextView
+        android:id="@+id/pop_sc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/border_space"
+        android:text="@string/str_sc_gmat_report"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_sec_gray"/>
+
+    <TextView
+        android:id="@+id/pop_rc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/border_space"
+        android:text="@string/str_rc_gmat_report"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_sec_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop_cr"
+        android:layout_gravity="center"
+        android:padding="@dimen/border_space"
+        android:text="@string/str_cr_gmat_report"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_sec_gray"/>
+
+    <TextView
+        android:id="@+id/pop_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/border_space"
+        android:text="@string/str_q_gmat_report"/>
+</LinearLayout>

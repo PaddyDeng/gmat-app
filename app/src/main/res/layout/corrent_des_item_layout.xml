@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.font.ControlTextView
+        android:id="@+id/corrent_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_ms"
+        android:layout_marginLeft="@dimen/border_space_sec_max"
+        android:layout_marginRight="@dimen/border_space"
+        android:layout_marginTop="@dimen/border_space_sec_m"/>
+    <!--<com.jzsy.gmat.weiget.GeneralView-->
+        <!--android:id="@+id/comment_view_info"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.font.ControlTextView
+        android:id="@+id/corrent_des_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/border_space_sec_m"
+        android:layout_marginLeft="@dimen/border_space_sec_max"
+        android:layout_marginRight="@dimen/border_space"
+        android:layout_marginTop="@dimen/border_space_sec_m"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?android:attr/selectableItemBackground"
+              android:orientation="vertical">
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.font.ControlTextView
+        android:id="@+id/know_item_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/border_space_sec_max"
+        android:text="CR备考篇"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/text_size_ml"/>
+
+    <View style="@style/setting_line"/>
+</LinearLayout>

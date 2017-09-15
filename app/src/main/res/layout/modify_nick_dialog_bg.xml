@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/simple_dialog_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/border_space_sec_max_m"
+        android:paddingRight="@dimen/border_space_sec_max_m"
+        android:paddingTop="@dimen/border_space_sec_max"
+        android:text="@string/str_set_modify_nick_name"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <EditText
+        android:id="@+id/simple_dialog_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/str_please_write"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/border_space_sec_max_m"
+        android:paddingRight="@dimen/border_space_sec_max_m"
+        android:paddingTop="@dimen/border_space_sec_max"
+        android:textColor="@color/color_black"
+        android:textColorHint="@color/color_hint"
+        android:textSize="@dimen/text_size_ml"/>
+
+    <View
+        style="@style/com_line"
+        android:layout_marginBottom="@dimen/border_space_sec_max_m"
+        android:layout_marginLeft="@dimen/border_space_sec_max_m"
+        android:layout_marginRight="@dimen/border_space_sec_max_m"/>
+
+    <include layout="@layout/simple_dialog_two_btn_layout"/>
+
+</LinearLayout>

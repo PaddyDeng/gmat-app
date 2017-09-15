@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/base_refresh_title_container"
+        style="@style/custome_title_bar_style">
+
+        <ImageView
+            style="@style/black_bg_title_back"/>
+
+        <TextView
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"
+            android:text="@string/str_pop_topic_feed_error"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/border_space_sec_max"
+                android:paddingRight="@dimen/border_space_sec_max">
+
+                <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.FeedItemView
+                    android:id="@+id/answer_error_fiv"
+                    style="@style/topic_error_fb_container"
+                    app:feedViewTxt="@string/str_answer_error"/>
+
+                <!--<RelativeLayout-->
+                <!--style="@style/topic_error_fb_container">-->
+
+                <!--<TextView-->
+                <!--style="@style/topic_error_fb_des"-->
+                <!--android:text="@string/str_answer_error"/>-->
+
+                <!--<CheckBox style="@style/topic_error_fb_checkbox_style"/>-->
+                <!--</RelativeLayout>-->
+
+                <View style="@style/dot_line"/>
+
+
+                <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.FeedItemView
+                    android:id="@+id/format_error_fiv"
+                    style="@style/topic_error_fb_container"
+                    app:feedViewTxt="@string/str_format_error"/>
+
+                <!--<RelativeLayout style="@style/topic_error_fb_container">-->
+
+                <!--<TextView-->
+                <!--style="@style/topic_error_fb_des"-->
+                <!--android:text="@string/str_format_error"/>-->
+
+                <!--<CheckBox style="@style/topic_error_fb_checkbox_style"/>-->
+                <!--</RelativeLayout>-->
+
+                <View style="@style/dot_line"/>
+
+                <!--<RelativeLayout style="@style/topic_error_fb_container">-->
+
+                <!--<TextView-->
+                <!--style="@style/topic_error_fb_des"-->
+                <!--android:text="@string/str_topic_content_error"/>-->
+
+                <!--<CheckBox style="@style/topic_error_fb_checkbox_style"/>-->
+                <!--</RelativeLayout>-->
+
+                <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.FeedItemView
+                    android:id="@+id/topic_error_fiv"
+                    style="@style/topic_error_fb_container"
+                    app:feedViewTxt="@string/str_topic_content_error"/>
+
+                <View style="@style/dot_line"/>
+
+                <!--<RelativeLayout style="@style/topic_error_fb_container">-->
+
+                <!--<TextView-->
+                <!--style="@style/topic_error_fb_des"-->
+                <!--android:text="@string/str_another_error"/>-->
+
+                <!--<CheckBox style="@style/topic_error_fb_checkbox_style"/>-->
+                <!--</RelativeLayout>-->
+
+                <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.FeedItemView
+                    android:id="@+id/another_error_fiv"
+                    style="@style/topic_error_fb_container"
+                    app:feedViewTxt="@string/str_another_error"/>
+
+                <View style="@style/dot_line"/>
+
+                <EditText
+                    android:id="@+id/topic_error_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:layout_marginTop="@dimen/border_space_sec_max"
+                    android:background="@drawable/white_cancel_shape"
+                    android:gravity="left|top"
+                    android:hint="@string/str_et_hint_info"
+                    android:padding="@dimen/border_space_half"
+                    android:textSize="@dimen/text_size_ml"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/border_space_sec_max"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/border_space_sec_max_m">
+
+                    <TextView
+                        android:id="@+id/topic_error_commit"
+                        style="@style/topic_error_fb_btn_style"
+                        android:text="@string/str_feed_commit"/>
+
+                    <TextView
+                        android:id="@+id/topic_error_cancel"
+                        style="@style/topic_error_fb_btn_style"
+                        android:text="@string/str_cancel"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="title_type">
+        <item>SC</item>
+        <item>CR</item>
+        <item>RC</item>
+        <item>PS</item>
+        <item>DS</item>
+    </string-array>
+
+    <string-array name="single_contact_arr">
+        <item>OG</item>
+        <item>PREP</item>
+        <item>讲义</item>
+        <item>GWD</item>
+        <item>Manhattan</item>
+    </string-array>
+
+    <string-array name="intelligent_arr">
+        <item>OG2017</item>
+        <item>PREP08</item>
+        <item>OG18新题</item>
+    </string-array>
+
+    <string-array name="simluation_tab_arr">
+        <item>PREP</item>
+        <item>GWD</item>
+        <item>精选题库</item>
+    </string-array>
+
+    <string-array name="remark_tab_arr">
+        <item>吐槽</item>
+        <item>推荐</item>
+        <item>高分故事</item>
+    </string-array>
+
+    <string-array name="buy_lesson_arr">
+        <item>公开课</item>
+        <item>视频课</item>
+    </string-array>
+
+    <string-array name="simulation_tab_arr">
+        <item>语文套题</item>
+        <item>数学套题</item>
+        <item>全套套题</item>
+    </string-array>
+
+    <string-array name="test_type_arr">
+        <item>考试时间</item>
+        <item>考试地址</item>
+        <item>考试内容</item>
+        <item>报名流程</item>
+        <item>考试费用</item>
+        <item>成绩复议</item>
+        <item>考试证件</item>
+        <item>转考退考</item>
+        <item>送分方式</item>
+    </string-array>
+
+    <string-array name="test_type_drawable_name">
+        <item>icon_test_time</item>
+        <item>icon_test_address</item>
+        <item>icon_test_content</item>
+        <item>icon_test_registration_process</item>
+        <item>icon_test_price</item>
+        <item>icon_test_review</item>
+        <item>icon_test_card</item>
+        <item>icon_test_take</item>
+        <item>icon_test_send_point_way</item>
+    </string-array>
+
+</resources>

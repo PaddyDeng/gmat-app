@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/custome_title_bar_style"
+        android:background="@color/color_black">
+
+        <ImageView
+            android:id="@+id/gmat_title_menu"
+            style="@style/main_nav_title_menu"/>
+
+        <TextView
+            android:id="@+id/title_centertxt"
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"
+            android:text="@string/str_preemptive_lesson"
+            android:textColor="@color/color_white"/>
+    </RelativeLayout>
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <!--<org.zywx.wbpalmstar.widgetone.uex11597450.weiget.DealContainer-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <com.better.banner.BBanner
+                android:id="@+id/gmat_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <!--</org.zywx.wbpalmstar.widgetone.uex11597450.weiget.DealContainer>-->
+
+            <View
+                style="@style/com_line"
+                android:layout_height="@dimen/border_space_sec"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/border_space_sec_max"
+                android:paddingRight="@dimen/border_space_sec_max">
+
+                <TextView
+                    android:id="@+id/free_trial_tv"
+                    style="@style/gmat_item_tv_style"
+                    android:drawableLeft="@drawable/icon_gmat_free_listener"
+                    android:text="@string/str_free_trial"/>
+
+                <View
+                    style="@style/com_line"
+                    android:layout_below="@id/free_trial_tv"/>
+            </RelativeLayout>
+
+            <include layout="@layout/free_lesson_layout"/>
+
+            <View
+                style="@style/com_line"
+                android:layout_height="@dimen/border_space_sec"/>
+
+            <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.StrongRecycler
+                android:id="@+id/card_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/border_space_sec"
+                android:layout_marginTop="@dimen/border_space_sec"/>
+
+            <View
+                style="@style/com_line"
+                android:layout_height="@dimen/border_space_sec"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/border_space_sec_max"
+                android:paddingRight="@dimen/border_space_sec_max">
+
+                <TextView
+                    android:id="@+id/introductory_course_tv"
+                    style="@style/gmat_item_tv_style"
+                    android:drawableLeft="@drawable/icon_gmat_read"
+                    android:text="@string/str_introductory_course"/>
+
+                <View
+                    android:id="@+id/introductory_course_line"
+                    style="@style/com_line"
+                    android:layout_below="@id/introductory_course_tv"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/gmat_intro_to_layout"/>
+
+            <View
+                style="@style/com_line"
+                android:layout_height="@dimen/border_space_sec"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/border_space_sec_max"
+                android:paddingRight="@dimen/border_space_sec_max">
+
+                <TextView
+                    android:id="@+id/expert_lecturer_tv"
+                    style="@style/gmat_item_tv_style"
+                    android:drawableLeft="@drawable/icon_gmat_teacher"
+                    android:text="@string/str_expert_lecturer"/>
+
+                <View
+                    android:id="@+id/expert_lecturer_line"
+                    style="@style/com_line"
+                    android:layout_below="@id/expert_lecturer_tv"/>
+
+                <TextView
+                    style="@style/gmat_item_more_style"
+                    android:layout_above="@id/expert_lecturer_line"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.StrongRecycler
+                android:id="@+id/teacher_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/border_space_sec"
+                android:layout_marginTop="@dimen/border_space_sec"/>
+
+            <!--<include layout="@layout/teacher_item_layout"/>-->
+
+            <View
+                style="@style/com_line"
+                android:layout_height="@dimen/border_space_sec"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/border_space_sec_max"
+                android:paddingRight="@dimen/border_space_sec_max">
+
+                <TextView
+                    android:id="@+id/hot_course_tv"
+                    style="@style/gmat_item_tv_style"
+                    android:drawableLeft="@drawable/icon_gmat_hot"
+                    android:text="@string/str_current_mon_hot_course"/>
+
+                <View
+                    android:id="@+id/hot_course_line"
+                    style="@style/com_line"
+                    android:layout_below="@id/hot_course_tv"/>
+            </RelativeLayout>
+
+
+            <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.StrongRecycler
+                android:id="@+id/hot_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/border_space_sec"
+                android:layout_marginTop="@dimen/border_space_sec"/>
+
+            <View
+                style="@style/com_line"
+                android:layout_height="@dimen/border_space_sec"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/border_space_sec_max"
+                android:paddingRight="@dimen/border_space_sec_max">
+
+                <TextView
+                    android:id="@+id/gmat_live_lesson_tv"
+                    style="@style/gmat_item_tv_style"
+                    android:text="@string/str_live_lesson"/>
+
+                <View
+                    style="@style/com_line"
+                    android:layout_below="@id/gmat_live_lesson_tv"/>
+            </RelativeLayout>
+
+
+            <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.StrongRecycler
+                android:id="@+id/lesson_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/border_space_sec"
+                android:layout_marginTop="@dimen/border_space_sec"/>
+
+            <View
+                style="@style/com_line"
+                android:layout_height="@dimen/border_space_sec"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/border_space_sec_max"
+                android:paddingRight="@dimen/border_space_sec_max">
+
+                <TextView
+                    android:id="@+id/gmat_video_lesson_tv"
+                    style="@style/gmat_item_tv_style"
+                    android:text="@string/str_video_lesson"/>
+
+                <View
+                    style="@style/com_line"
+                    android:layout_below="@id/gmat_video_lesson_tv"/>
+            </RelativeLayout>
+
+            <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.StrongRecycler
+                android:id="@+id/lesson_video_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/border_space_sec"
+                android:layout_marginTop="@dimen/border_space_sec"/>
+
+            <View
+                style="@style/com_line"
+                android:layout_height="@dimen/border_space_sec"/>
+
+
+        </LinearLayout>
+    </org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView>
+
+</LinearLayout>

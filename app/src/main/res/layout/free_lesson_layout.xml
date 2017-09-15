@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/border_space_sec">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_half_padding"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:id="@+id/free_lesson_one_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_free_sc_bg"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/border_space_half">
+
+                    <TextView
+                        android:id="@+id/free_one_title_tv"
+                        style="@style/free_title_style"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:id="@+id/free_one_teacher_tv"
+                        style="@style/sm_txt_style"
+                        android:layout_marginBottom="@dimen/border_space_half"
+                        android:layout_marginTop="@dimen/border_space_half"/>
+
+                    <TextView
+                        android:id="@+id/free_one_time_tv"
+                        style="@style/sm_txt_style"
+                        android:layout_marginBottom="@dimen/border_space_half"/>
+
+                    <TextView
+                        style="@style/go_try_style"
+                        android:layout_marginBottom="@dimen/border_space"
+                        android:textColor="#a3d540"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gmat_free_one_random"
+                style="@style/play_times_style"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/free_two_new_container"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/base_half_padding"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/icon_free_rc_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/free_two_title_tv"
+                        style="@style/free_title_style"
+                        android:layout_marginTop="@dimen/base_half_padding"
+                        android:maxLines="1"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/border_space_half"
+                        android:orientation="vertical"
+                        android:paddingRight="@dimen/base_half_padding">
+
+                        <TextView
+                            android:id="@+id/gmat_teacher_two"
+                            style="@style/sm_txt_style"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/border_space_sec_m"/>
+
+                        <TextView
+                            android:id="@+id/free_two_time_tv"
+                            style="@style/sm_txt_style"
+                            android:layout_width="wrap_content"
+                            android:layout_below="@id/gmat_teacher_two"
+                            android:layout_marginLeft="@dimen/border_space_sec_m"/>
+
+                        <TextView
+                            style="@style/go_try_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="#ff92b7"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/free_lesson_two_container"
+                style="@style/play_times_style"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/border_space"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/free_thr_new_container"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/base_half_padding"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/icon_free_cr_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/free_thr_title_tv"
+                        style="@style/free_title_style"
+                        android:layout_marginTop="@dimen/base_half_padding"
+                        android:maxLines="1"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/border_space_half"
+                        android:orientation="vertical"
+                        android:paddingRight="@dimen/base_half_padding">
+
+                        <TextView
+                            android:id="@+id/gmat_teacher_thr"
+                            style="@style/sm_txt_style"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/border_space_sec_m"/>
+
+                        <TextView
+                            android:id="@+id/free_thr_time_tv"
+                            style="@style/sm_txt_style"
+                            android:layout_width="wrap_content"
+                            android:layout_below="@id/gmat_teacher_thr"
+                            android:layout_marginLeft="@dimen/border_space_sec_m"/>
+
+                        <TextView
+                            style="@style/go_try_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="#ffb76f"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/free_lesson_thr_container"
+                style="@style/play_times_style"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_half_padding"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:id="@+id/free_lesson_four_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_free_math_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/border_space_half">
+
+                    <TextView
+                        android:id="@+id/free_four_title_tv"
+                        style="@style/free_title_style"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:id="@+id/free_four_teacher_tv"
+                        style="@style/sm_txt_style"
+                        android:layout_marginBottom="@dimen/border_space_half"
+                        android:layout_marginTop="@dimen/border_space_half"/>
+
+                    <TextView
+                        android:id="@+id/free_four_time_tv"
+                        style="@style/sm_txt_style"
+                        android:layout_marginBottom="@dimen/border_space_half"/>
+
+                    <TextView
+                        style="@style/go_try_style"
+                        android:layout_marginBottom="@dimen/border_space"
+                        android:textColor="#7f91ff"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/free_label_four_iv"
+                style="@style/play_times_style"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

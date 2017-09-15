@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/know_detial_title_rl"
+        style="@style/custome_title_bar_style">
+
+        <ImageView style="@style/black_bg_title_back"/>
+
+        <TextView
+            android:id="@+id/know_detail_title"
+            style="@style/title_tv_style"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/know_swipe"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@id/know_detial_title_rl">-->
+
+    <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scroll_view"
+        android:layout_height="match_parent"
+        android:layout_below="@id/know_detial_title_rl"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <org.zywx.wbpalmstar.widgetone.uex11597450.weiget.GeneralView
+            android:id="@+id/know_general_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </org.zywx.wbpalmstar.widgetone.uex11597450.weiget.overscroll.FastAndOverScrollScrollView>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/load_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/know_detial_title_rl"
+        android:background="@color/color_white">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/again_load_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_again_new_load"
+            android:textColor="@color/color_black"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>
